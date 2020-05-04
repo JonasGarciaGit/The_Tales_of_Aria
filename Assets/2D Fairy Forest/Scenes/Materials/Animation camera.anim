@@ -20,9 +20,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 4.8, y: -0, z: -20.04}
-        inSlope: {x: 1.5825, y: 0, z: 0}
-        outSlope: {x: 1.5825, y: 0, z: 0}
+        value: {x: -4, y: 0, z: -20.04}
+        inSlope: {x: 0.90125, y: -0, z: 0}
+        outSlope: {x: 0.90125, y: -0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -30,8 +30,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 80
         value: {x: 68.1, y: -0, z: -20.04}
-        inSlope: {x: 1.5825, y: 0, z: 0}
-        outSlope: {x: 1.5825, y: 0, z: 0}
+        inSlope: {x: 0.90125, y: -0, z: 0}
+        outSlope: {x: 0.90125, y: -0, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -84,9 +84,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 4.8
-        inSlope: 1.5825
-        outSlope: 1.5825
+        value: -4
+        inSlope: 0.90125
+        outSlope: 0.90125
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -94,8 +94,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 80
         value: 68.1
-        inSlope: 1.5825
-        outSlope: 1.5825
+        inSlope: 0.90125
+        outSlope: 0.90125
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -112,9 +112,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -0
-        inSlope: 0
-        outSlope: 0
+        value: 0
+        inSlope: -0
+        outSlope: -0
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -122,8 +122,8 @@ AnimationClip:
       - serializedVersion: 3
         time: 80
         value: -0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0
+        outSlope: -0
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
