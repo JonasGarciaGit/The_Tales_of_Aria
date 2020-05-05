@@ -5,6 +5,10 @@ using UnityEngine;
 public class ControllerCamera : MonoBehaviour
 {
 
+    public Texture2D cursorImg;
+    private Vector2 hotSpot = Vector2.zero;
+    private CursorMode cursorMode = CursorMode.Auto;
+
     public float offsetX = 3f;
     public float smooth = 0.1f;
 
@@ -22,7 +26,7 @@ public class ControllerCamera : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<Player>().transform;
-
+        Cursor.SetCursor(cursorImg, hotSpot, cursorMode);
     }
 
     // Update is called once per frame
@@ -36,4 +40,5 @@ public class ControllerCamera : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, new Vector3(playerX,playerY,transform.position.z),smooth);
         }
     }
+
 }

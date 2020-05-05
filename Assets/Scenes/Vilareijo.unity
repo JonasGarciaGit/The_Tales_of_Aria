@@ -176,7 +176,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300026, guid: 08ba9b493173dff4884cd9e532a0062b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3305,7 +3305,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452604075}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 87e13566df781944585807d9a0869b8c, type: 3}
@@ -11682,12 +11682,12 @@ PrefabInstance:
     - target: {fileID: 5842051370582576936, guid: d9151884e50235542a54c44d65291f40,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.105836
+      value: -7.43
       objectReference: {fileID: 0}
     - target: {fileID: 5842051370582576936, guid: d9151884e50235542a54c44d65291f40,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.518516
+      value: -2.29
       objectReference: {fileID: 0}
     - target: {fileID: 5842051370582576936, guid: d9151884e50235542a54c44d65291f40,
         type: 3}
@@ -11733,6 +11733,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842051370582576937, guid: d9151884e50235542a54c44d65291f40,
+        type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842051370582576939, guid: d9151884e50235542a54c44d65291f40,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5842051370582576941, guid: d9151884e50235542a54c44d65291f40,
         type: 3}
@@ -12248,6 +12258,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 64.28969
+      objectReference: {fileID: 0}
+    - target: {fileID: 66024859349861325, guid: 7707817059eb0cc4a8ac8606a82091d6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.2951777
+      objectReference: {fileID: 0}
+    - target: {fileID: 66024859349861325, guid: 7707817059eb0cc4a8ac8606a82091d6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.1568513
       objectReference: {fileID: 0}
     - target: {fileID: 66024859349861330, guid: 7707817059eb0cc4a8ac8606a82091d6,
         type: 3}
