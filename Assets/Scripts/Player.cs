@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -10,9 +11,12 @@ public class Player : MonoBehaviour
     private Animator playerAnimator;
     public float speed;
     private float horizontal;
-
+    public Image life;
+    public float ActualLife;
+    public float MaxLife = 182.0f;
+    private float deadlyDamage = 0.0f;
     private bool facingRight;
-
+    private Transform myTransform;
     private bool jump = false;
     public float jumpForce;
     public bool isGround;
@@ -25,8 +29,9 @@ public class Player : MonoBehaviour
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
-       
-  
+        myTransform = GetComponent<Transform>();
+        ActualLife = MaxLife;
+
     }
 
     // Update is called once per frame
@@ -38,8 +43,13 @@ public class Player : MonoBehaviour
         {
             JumpPlayer();
         }
+        if (ActualLife > 0 && ActualLife <= MaxLife)
+        {
+            life.rectTransform.sizeDelta = new Vector2(ActualLife / MaxLife * 182, 11.43732f);
+        }
 
         Deslizar(playerCollision);
+        Curar();
     }
 
     void FixedUpdate()
@@ -77,14 +87,30 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         playerCollision = collision;
-        if (collision.gameObject.tag == "Chao")
+        if (collision.gameObject.tag == "Chao" || collision.gameObject.tag == "plataformaMovel") 
         {
             isGround = true;
             maxJump = false;
             playerAnimator.SetBool("Jump", false);
             playerAnimator.SetBool("IsGrounded", true);
         }
-       
+        if (collision.transform.tag == "plataformaMovel")
+        {
+            myTransform.parent = collision.transform;
+        }
+        if (collision.gameObject.tag == "arma")
+        {
+            ActualLife = ActualLife - 20;
+        }
+
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.transform.tag == "plataformaMovel")
+        {
+            myTransform.parent = null;
+        }
     }
 
     void JumpPlayer()
@@ -118,6 +144,14 @@ public class Player : MonoBehaviour
         {
             playerAnimator.SetBool("Sliding", false);
             playerAnimator.SetBool("Running", false);
+        }
+    }
+
+    void Curar()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ActualLife = ActualLife + 20;
         }
     }
 

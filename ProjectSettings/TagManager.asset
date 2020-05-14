@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Npc
   - Chao
+  - plataformaMovel
+  - arma
   layers:
   - Default
   - TransparentFX

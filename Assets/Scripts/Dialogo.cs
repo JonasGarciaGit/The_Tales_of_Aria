@@ -15,6 +15,8 @@ public class Dialogo : MonoBehaviour
     private string[] frases;
     [SerializeField]
     private GameObject caixaDialogo;
+    [SerializeField]
+    private Text despedida;
     private int contador = 0;
     private bool podeInteragir = false;
     [SerializeField]
@@ -42,8 +44,8 @@ public class Dialogo : MonoBehaviour
 
     public void continuarConversa()
     {
-        if(contador < frases.Length - 1)
-        {
+        if (contador < frases.Length - 1)
+        {       
             contador++;
         }
         else
