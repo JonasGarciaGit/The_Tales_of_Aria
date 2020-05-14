@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
 
     private Rigidbody2D playerRigidBody;
+    private Animator playerAnimator;
     public float speed;
     private float horizontal;
 
@@ -14,13 +15,17 @@ public class Player : MonoBehaviour
 
     private bool jump = false;
     public float jumpForce;
-    public Transform groundCheck;
     public bool isGround;
+    private bool maxJump = false;
+    private Collision2D playerCollision;
+
 
     // Start is called before the first frame update
     void Start()
     {
         playerRigidBody = GetComponent<Rigidbody2D>();
+        playerAnimator = GetComponent<Animator>();
+       
   
     }
 
@@ -29,36 +34,27 @@ public class Player : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Jump") && isGround)
-        {
-            jump = true;
-        }
-    }
-
-    void FixedUpdate()
-    {
-        MovePlayer(horizontal);
-
-        if (jump && isGround)
+        if (Input.GetButtonDown("Jump"))
         {
             JumpPlayer();
         }
 
+        Deslizar(playerCollision);
     }
 
-
-    void OnCollisionEnter2D(Collision2D collision)
+    void FixedUpdate()
     {
-            if(collision.gameObject.tag == "Chao")
+      
+        if (horizontal != 0) {
+            MovePlayer(horizontal);
+        }
+        else
         {
-            isGround = true;
+            playerAnimator.SetBool("Running", false);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        isGround = false;
-    }
+
 
     void MovePlayer(float move){
         playerRigidBody.velocity = new Vector2(move * speed, playerRigidBody.velocity.y);
@@ -67,6 +63,8 @@ public class Player : MonoBehaviour
         {
             Flip();
         }
+        playerAnimator.SetBool("Running", true);
+
     }
 
     void Flip()
@@ -75,12 +73,52 @@ public class Player : MonoBehaviour
         transform.localScale = new Vector3(-transform.localScale.x , transform.localScale.y, transform.localScale.z);
     }
 
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        playerCollision = collision;
+        if (collision.gameObject.tag == "Chao")
+        {
+            isGround = true;
+            maxJump = false;
+            playerAnimator.SetBool("Jump", false);
+            playerAnimator.SetBool("IsGrounded", true);
+        }
+       
+    }
+
     void JumpPlayer()
     {
-        if (isGround)
+
+        jump = true;
+        if (!maxJump)
         {
             playerRigidBody.AddForce(new Vector2(0f, jumpForce));
-            jump = false;
+            playerAnimator.SetBool("Jump", true);
+            playerAnimator.SetBool("IsGrounded", false);
+            maxJump = true;
+        }  
+    }
+
+    void Deslizar(Collision2D collision)
+    {
+        if (collision.gameObject.name == "Rampa" && facingRight == false)
+        {
+            speed = 10;
+            playerAnimator.SetBool("Sliding", true);
+            playerAnimator.SetBool("Running", false);
+        }
+        if(facingRight == true)
+        {
+            speed = 5;
+            playerAnimator.SetBool("Sliding", false);
+            playerAnimator.SetBool("Running", true);
+        }
+        if(horizontal == 0)
+        {
+            playerAnimator.SetBool("Sliding", false);
+            playerAnimator.SetBool("Running", false);
         }
     }
+
 }
