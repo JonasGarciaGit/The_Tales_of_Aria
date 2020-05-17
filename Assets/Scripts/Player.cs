@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D playerRigidBody;
     private Animator playerAnimator;
-    public float speed;
+    public float speed = 2;
     private float horizontal;
     public Image life;
     public float ActualLife;
@@ -29,7 +29,9 @@ public class Player : MonoBehaviour
     public bool isGround;
     private bool maxJump = false;
     private Collision2D playerCollision;
+    private bool IsRunning;
     private SpriteRenderer PlayerSpriteRender;
+
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,7 @@ public class Player : MonoBehaviour
         myTransform = GetComponent<Transform>();
         PlayerSpriteRender = GetComponent<SpriteRenderer>();
         ActualLife = MaxLife;
+
     }
 
     // Update is called once per frame
@@ -55,6 +58,19 @@ public class Player : MonoBehaviour
             life.rectTransform.sizeDelta = new Vector2(ActualLife / MaxLife * 182, 11.43732f);
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            IsRunning = true;
+            Correr(IsRunning);
+            speed = 5;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            IsRunning = false;
+            Correr(IsRunning);
+            speed = 2;
+        }
+
         Experience();
         Deslizar(playerCollision);
         Curar();
@@ -62,40 +78,41 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-      
-        if (horizontal != 0) {
+
+        if (horizontal != 0)
+        {
             MovePlayer(horizontal);
         }
         else
         {
-            playerAnimator.SetBool("Running", false);
+            playerAnimator.SetBool("Walking", false);
         }
     }
 
 
 
-    void MovePlayer(float move){
+    void MovePlayer(float move)
+    {
         playerRigidBody.velocity = new Vector2(move * speed, playerRigidBody.velocity.y);
 
-        if(move > 0 && facingRight || move < 0 && !facingRight)
+        if (move > 0 && facingRight || move < 0 && !facingRight)
         {
             Flip();
         }
-        playerAnimator.SetBool("Running", true);
-
+        playerAnimator.SetBool("Walking", true);
     }
 
     void Flip()
     {
         facingRight = !facingRight;
-        transform.localScale = new Vector3(-transform.localScale.x , transform.localScale.y, transform.localScale.z);
+        transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         playerCollision = collision;
-        if (collision.gameObject.tag == "Chao" || collision.gameObject.tag == "plataformaMovel") 
+        if (collision.gameObject.tag == "Chao" || collision.gameObject.tag == "plataformaMovel")
         {
             isGround = true;
             maxJump = false;
@@ -111,12 +128,11 @@ public class Player : MonoBehaviour
             ActualLife = ActualLife - 20;
             StartCoroutine("Invencible");
         }
-        if(ActualLife <= 0)
+        if (ActualLife <= 0)
         {
             Invoke("RecarregarJogo", 4f);
             gameObject.SetActive(false);
         }
-
     }
 
     void RecarregarJogo()
@@ -142,7 +158,7 @@ public class Player : MonoBehaviour
             playerAnimator.SetBool("Jump", true);
             playerAnimator.SetBool("IsGrounded", false);
             maxJump = true;
-        }  
+        }
     }
 
     void Deslizar(Collision2D collision)
@@ -153,18 +169,28 @@ public class Player : MonoBehaviour
             {
                 speed = 10;
                 playerAnimator.SetBool("Sliding", true);
+                playerAnimator.SetBool("Walking", false);
                 playerAnimator.SetBool("Running", false);
             }
-            if (facingRight == true)
+            if (collision.gameObject.name == "Rampa" && facingRight == true)
             {
-                speed = 5;
                 playerAnimator.SetBool("Sliding", false);
-                playerAnimator.SetBool("Running", true);
+                playerAnimator.SetBool("Walking", true);
+
+                if (playerAnimator.GetBool("Walking") == true)
+                {
+                    speed = 2;
+                }
+                if (playerAnimator.GetBool("Running") == true)
+                {
+                    speed = 5;
+                }
+
             }
             if (horizontal == 0)
             {
                 playerAnimator.SetBool("Sliding", false);
-                playerAnimator.SetBool("Running", false);
+                playerAnimator.SetBool("Walking", false);
             }
         }
         catch (Exception e)
@@ -181,6 +207,21 @@ public class Player : MonoBehaviour
             AppleAmount.text = (int.Parse(AppleAmount.text) - 1).ToString();
         }
     }
+
+    void Correr(bool isRunning)
+    {
+        if (isRunning)
+        {
+            playerAnimator.SetBool("Running", true);
+            playerAnimator.SetBool("Walking", false);
+        }
+        if (!isRunning)
+        {
+            playerAnimator.SetBool("Running", false);
+            playerAnimator.SetBool("Walking", true);
+        }
+    }
+
 
     void Experience()
     {
@@ -200,14 +241,13 @@ public class Player : MonoBehaviour
     //Criando uma corotina para deixar o personagem invencivel após sofrer dano.
     IEnumerator Invencible()
     {
-        for(float i=0; i<1; i += 0.1f)
+        for (float i = 0; i < 1; i += 0.1f)
         {
             damage = false;
             PlayerSpriteRender.enabled = false;
             yield return new WaitForSeconds(0.1f);
             PlayerSpriteRender.enabled = true;
             yield return new WaitForSeconds(0.1f);
-            
         }
         damage = true;
     }
