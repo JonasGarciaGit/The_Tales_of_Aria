@@ -8,6 +8,7 @@ TagManager:
   - Chao
   - plataformaMovel
   - arma
+  - "Ma\xE7a"
   layers:
   - Default
   - TransparentFX
@@ -17,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - "Ma\xE7a"
+  - Chao
   - 
   - 
   - 
