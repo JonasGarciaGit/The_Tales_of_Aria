@@ -9,6 +9,8 @@ TagManager:
   - plataformaMovel
   - arma
   - "Ma\xE7a"
+  - EnemieSpot
+  - OutOfZone
   layers:
   - Default
   - TransparentFX

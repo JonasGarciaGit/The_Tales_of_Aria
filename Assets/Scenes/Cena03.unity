@@ -136,7 +136,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &812029
 Transform:
@@ -622,7 +622,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &20790612
 SpriteRenderer:
@@ -1279,7 +1279,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &40677952
 SpriteRenderer:
@@ -2682,7 +2682,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &85414556
 SpriteRenderer:
@@ -2925,7 +2925,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &87688744
 SpriteRenderer:
@@ -3176,7 +3176,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &90584184
 SpriteRenderer:
@@ -3419,7 +3419,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &96306071
 SpriteRenderer:
@@ -3499,7 +3499,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &97210964
 Transform:
@@ -4088,7 +4088,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &103201342
 SpriteRenderer:
@@ -4412,7 +4412,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &116606605
 SpriteRenderer:
@@ -5627,7 +5627,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &158386899
 SpriteRenderer:
@@ -6194,7 +6194,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &176280335
 SpriteRenderer:
@@ -7248,7 +7248,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &225781456
 SpriteRenderer:
@@ -7355,7 +7355,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &227544568
 SpriteRenderer:
@@ -7436,7 +7436,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &232799439
 SpriteRenderer:
@@ -7517,7 +7517,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &235352632
 Transform:
@@ -7922,7 +7922,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &242164785
 SpriteRenderer:
@@ -9056,7 +9056,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &272637717
 SpriteRenderer:
@@ -9137,7 +9137,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &272899454
 SpriteRenderer:
@@ -9461,7 +9461,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &282388235
 SpriteRenderer:
@@ -9785,7 +9785,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &290212346
 SpriteRenderer:
@@ -10190,7 +10190,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &300694168
 SpriteRenderer:
@@ -10271,7 +10271,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &303598836
 SpriteRenderer:
@@ -11000,7 +11000,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &313957479
 Transform:
@@ -12215,7 +12215,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &351948175
 SpriteRenderer:
@@ -12782,7 +12782,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &362451662
 SpriteRenderer:
@@ -12944,7 +12944,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &371040817
 SpriteRenderer:
@@ -13025,7 +13025,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &374372015
 SpriteRenderer:
@@ -13253,6 +13253,63 @@ Transform:
   m_Father: {fileID: 1447667614}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &380184321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380184322}
+  - component: {fileID: 380184323}
+  m_Layer: 0
+  m_Name: PontoCMinotaur
+  m_TagString: OutOfZone
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &380184322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380184321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -25.42, y: -1.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 775682622}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &380184323
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380184321}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03352928, y: 0.60471904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06116867, y: 3.7958958}
+  m_EdgeRadius: 0
 --- !u!1 &381234578
 GameObject:
   m_ObjectHideFlags: 0
@@ -13673,7 +13730,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &401045632
 SpriteRenderer:
@@ -13754,7 +13811,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &401383293
 Transform:
@@ -13997,7 +14054,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &407523086
 Transform:
@@ -14402,7 +14459,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &425818433
 SpriteRenderer:
@@ -14483,7 +14540,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &429298231
 Transform:
@@ -15461,7 +15518,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &462927716
 SpriteRenderer:
@@ -15542,7 +15599,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &466139243
 SpriteRenderer:
@@ -16190,7 +16247,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &479395455
 SpriteRenderer:
@@ -16271,7 +16328,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &484204778
 SpriteRenderer:
@@ -16352,7 +16409,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &485476981
 SpriteRenderer:
@@ -16514,7 +16571,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &488474702
 SpriteRenderer:
@@ -17116,6 +17173,63 @@ Transform:
   m_Father: {fileID: 2091781432}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &529131423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 529131424}
+  - component: {fileID: 529131425}
+  m_Layer: 0
+  m_Name: PontoBMinotaur
+  m_TagString: EnemieSpot
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &529131424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529131423}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.71, y: -1.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 775682622}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &529131425
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529131423}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.043476105, y: 0.6055137}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.21743011, y: 3.9210832}
+  m_EdgeRadius: 0
 --- !u!1 &531622264
 GameObject:
   m_ObjectHideFlags: 0
@@ -17816,7 +17930,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &551466156
 SpriteRenderer:
@@ -18302,7 +18416,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &559146119
 Transform:
@@ -18707,7 +18821,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &583096118
 Transform:
@@ -18788,7 +18902,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &584718555
 SpriteRenderer:
@@ -18869,7 +18983,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &587376460
 SpriteRenderer:
@@ -19274,7 +19388,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &604227923
 Transform:
@@ -19760,7 +19874,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &618882042
 SpriteRenderer:
@@ -19841,7 +19955,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &621293184
 Transform:
@@ -20003,7 +20117,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &622357323
 SpriteRenderer:
@@ -20252,7 +20366,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &625254481
 Transform:
@@ -21564,7 +21678,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &666476329
 SpriteRenderer:
@@ -21833,7 +21947,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &671613576
 Transform:
@@ -21914,7 +22028,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &672296138
 SpriteRenderer:
@@ -22157,7 +22271,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &677762923
 SpriteRenderer:
@@ -23825,7 +23939,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &729680630
 SpriteRenderer:
@@ -24857,7 +24971,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &754771193
 SpriteRenderer:
@@ -25652,6 +25766,62 @@ Transform:
   m_Father: {fileID: 539207783}
   m_RootOrder: 124
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &775682621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 775682622}
+  - component: {fileID: 775682623}
+  m_Layer: 0
+  m_Name: EnemieMinotaur1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &775682622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775682621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 59.34, y: -0.94683266, z: -2.0195312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1517214898}
+  - {fileID: 1534845551}
+  - {fileID: 529131424}
+  - {fileID: 380184322}
+  - {fileID: 1735905457}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775682623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775682621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c384c0b55ef3704cb897daa281f96a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemie: {fileID: 1517214898}
+  enemieSprite: {fileID: 0}
+  position:
+  - {fileID: 1534845551}
+  - {fileID: 529131424}
+  speed: 3
+  isRight: 1
+  player: {fileID: 4342714232705862655}
 --- !u!1 &779928687
 GameObject:
   m_ObjectHideFlags: 0
@@ -26072,7 +26242,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &787877612
 SpriteRenderer:
@@ -26801,7 +26971,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &813586240
 SpriteRenderer:
@@ -26963,7 +27133,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &814754595
 SpriteRenderer:
@@ -27206,7 +27376,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &820356273
 SpriteRenderer:
@@ -27449,7 +27619,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &827259147
 SpriteRenderer:
@@ -27935,7 +28105,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &832164558
 SpriteRenderer:
@@ -28016,7 +28186,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &832516337
 SpriteRenderer:
@@ -28421,7 +28591,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &847070523
 SpriteRenderer:
@@ -28745,7 +28915,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &854856601
 SpriteRenderer:
@@ -29231,7 +29401,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &873444143
 SpriteRenderer:
@@ -29312,7 +29482,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &875927889
 SpriteRenderer:
@@ -29474,7 +29644,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &883663701
 SpriteRenderer:
@@ -29555,7 +29725,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &885434151
 SpriteRenderer:
@@ -30527,7 +30697,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &922624367
 SpriteRenderer:
@@ -30770,7 +30940,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &929211830
 SpriteRenderer:
@@ -31256,7 +31426,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &937941851
 Transform:
@@ -31338,7 +31508,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &942582181
 Transform:
@@ -32411,7 +32581,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &974327263
 SpriteRenderer:
@@ -32816,7 +32986,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &993138163
 Transform:
@@ -33116,7 +33286,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1004312440
 Transform:
@@ -33521,7 +33691,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1008343177
 SpriteRenderer:
@@ -33683,7 +33853,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1012764562
 SpriteRenderer:
@@ -34250,7 +34420,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1026948903
 SpriteRenderer:
@@ -35066,7 +35236,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1048097946
 Transform:
@@ -35309,7 +35479,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1058458316
 SpriteRenderer:
@@ -35471,7 +35641,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1061264019
 SpriteRenderer:
@@ -35714,7 +35884,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1071356837
 Transform:
@@ -36200,7 +36370,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1097991026
 Transform:
@@ -36443,7 +36613,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1104200415
 SpriteRenderer:
@@ -36848,7 +37018,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1115138654
 Transform:
@@ -37091,7 +37261,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1117059774
 Transform:
@@ -37253,7 +37423,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1118298964
 Transform:
@@ -37727,7 +37897,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1130465562
 SpriteRenderer:
@@ -38132,7 +38302,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1153385346
 SpriteRenderer:
@@ -38214,7 +38384,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1153445443
 Transform:
@@ -38483,7 +38653,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1162081461
 Transform:
@@ -38645,7 +38815,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1174178084
 Transform:
@@ -39050,7 +39220,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1190815633
 SpriteRenderer:
@@ -39131,7 +39301,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1196508630
 SpriteRenderer:
@@ -39665,7 +39835,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1215121979
 SpriteRenderer:
@@ -40070,7 +40240,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1237581428
 SpriteRenderer:
@@ -40313,7 +40483,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1244487083
 SpriteRenderer:
@@ -40718,7 +40888,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1261580103
 SpriteRenderer:
@@ -40799,7 +40969,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1265263036
 Transform:
@@ -42022,7 +42192,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1303920705
 SpriteRenderer:
@@ -42346,7 +42516,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1308417640
 SpriteRenderer:
@@ -42913,7 +43083,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1319293313
 SpriteRenderer:
@@ -42994,7 +43164,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1323479435
 SpriteRenderer:
@@ -43156,7 +43326,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1324122936
 SpriteRenderer:
@@ -43845,7 +44015,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1341715908
 SpriteRenderer:
@@ -44898,7 +45068,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1376809298
 SpriteRenderer:
@@ -46126,7 +46296,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1398245748
 SpriteRenderer:
@@ -46869,7 +47039,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1427865537
 SpriteRenderer:
@@ -47031,7 +47201,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1434086261
 SpriteRenderer:
@@ -47112,7 +47282,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1435164690
 SpriteRenderer:
@@ -47193,7 +47363,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1436176875
 SpriteRenderer:
@@ -48323,7 +48493,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1467341187
 SpriteRenderer:
@@ -48648,7 +48818,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1475060339
 SpriteRenderer:
@@ -49160,7 +49330,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1491119689
 Transform:
@@ -50626,6 +50796,164 @@ Transform:
   m_Father: {fileID: 1339300431}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1517214895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1517214898}
+  - component: {fileID: 1517214897}
+  - component: {fileID: 1517214896}
+  - component: {fileID: 1517214900}
+  - component: {fileID: 1517214901}
+  - component: {fileID: 1517214899}
+  m_Layer: 0
+  m_Name: Minotaur
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1517214896
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517214895}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea09d068430b3aa46b5f0c709be061dc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1517214897
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517214895}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
+  m_Sprite: {fileID: -2991773290986861209, guid: 610b5f75dae4c154299b8687578a45f2,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.6, y: 2.05}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1517214898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517214895}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.455, y: -1.399755, z: 2.0195312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 775682622}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1517214899
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517214895}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08555603, y: -0.012119472}
+  m_Size: {x: 1.9572296, y: 1.9572302}
+  m_Direction: 0
+--- !u!50 &1517214900
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517214895}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1517214901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517214895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58c72e96015768f46889aca34dbe831f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4342714232705862655}
+  enemieObject: {fileID: 775682621}
+  speed: 6
+  spotPosition: {fileID: 1534845551}
 --- !u!1 &1517538452
 GameObject:
   m_ObjectHideFlags: 0
@@ -50893,7 +51221,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1529215398
 SpriteRenderer:
@@ -51147,6 +51475,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1534845550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534845551}
+  - component: {fileID: 1534845552}
+  m_Layer: 0
+  m_Name: PontoAMinotaur
+  m_TagString: EnemieSpot
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1534845551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534845550}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -15, y: -1.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 775682622}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1534845552
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534845550}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05949402, y: 0.37742424}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.30306244, y: 3.429656}
+  m_EdgeRadius: 0
 --- !u!1 &1534952180
 GameObject:
   m_ObjectHideFlags: 0
@@ -53341,7 +53726,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1609623053
 SpriteRenderer:
@@ -53448,7 +53833,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1610477310
 SpriteRenderer:
@@ -53853,7 +54238,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1633699855
 SpriteRenderer:
@@ -54906,7 +55291,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1655393895
 SpriteRenderer:
@@ -55473,7 +55858,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1669080788
 Transform:
@@ -55554,7 +55939,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1669157402
 SpriteRenderer:
@@ -57231,7 +57616,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1731693164
 SpriteRenderer:
@@ -57459,6 +57844,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1735905456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1735905457}
+  - component: {fileID: 1735905458}
+  m_Layer: 0
+  m_Name: PontoDMinotaur
+  m_TagString: OutOfZone
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1735905457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735905456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.56, y: -1.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 775682622}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1735905458
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735905456}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03352928, y: 0.60471904}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06116867, y: 3.7958958}
+  m_EdgeRadius: 0
 --- !u!1 &1738801029
 GameObject:
   m_ObjectHideFlags: 0
@@ -57474,7 +57916,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1738801030
 Transform:
@@ -57879,7 +58321,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1750306025
 Transform:
@@ -58041,7 +58483,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1758765931
 Transform:
@@ -58608,7 +59050,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1765383557
 Transform:
@@ -58770,7 +59212,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1768571186
 Transform:
@@ -58851,7 +59293,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1768580126
 SpriteRenderer:
@@ -59661,7 +60103,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1792806488
 SpriteRenderer:
@@ -60228,7 +60670,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1802598169
 SpriteRenderer:
@@ -60471,7 +60913,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1806770665
 SpriteRenderer:
@@ -60552,7 +60994,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1807684361
 Transform:
@@ -60795,7 +61237,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1815317276
 Transform:
@@ -62010,7 +62452,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1838835986
 Transform:
@@ -62415,7 +62857,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1844370646
 SpriteRenderer:
@@ -63873,7 +64315,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1884795792
 SpriteRenderer:
@@ -64116,7 +64558,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1892144497
 SpriteRenderer:
@@ -64764,7 +65206,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1914643006
 SpriteRenderer:
@@ -65088,7 +65530,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1919358358
 SpriteRenderer:
@@ -65250,7 +65692,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1924529995
 SpriteRenderer:
@@ -66384,7 +66826,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1947725176
 Transform:
@@ -66795,7 +67237,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1976472613
 SpriteRenderer:
@@ -66876,7 +67318,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1989970109
 SpriteRenderer:
@@ -67119,7 +67561,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &1998444628
 SpriteRenderer:
@@ -67281,7 +67723,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2003449442
 SpriteRenderer:
@@ -67524,7 +67966,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2006974963
 SpriteRenderer:
@@ -67767,7 +68209,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2019163713
 Transform:
@@ -68172,7 +68614,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2037511878
 SpriteRenderer:
@@ -68334,7 +68776,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2039372396
 SpriteRenderer:
@@ -69144,7 +69586,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2061184237
 SpriteRenderer:
@@ -70198,7 +70640,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2087036699
 Transform:
@@ -70849,7 +71291,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2109698348
 SpriteRenderer:
@@ -71659,7 +72101,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2141367040
 Transform:
@@ -71821,7 +72263,7 @@ GameObject:
   m_TagString: Chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!212 &2142756533
 SpriteRenderer:
@@ -71978,12 +72420,12 @@ PrefabInstance:
     - target: {fileID: 4342714233770845290, guid: 05c5769d5c17b0d49bba3b97f21b8242,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.15
+      value: 32.04
       objectReference: {fileID: 0}
     - target: {fileID: 4342714233770845290, guid: 05c5769d5c17b0d49bba3b97f21b8242,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.43
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 4342714233770845290, guid: 05c5769d5c17b0d49bba3b97f21b8242,
         type: 3}

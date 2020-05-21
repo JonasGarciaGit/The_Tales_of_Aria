@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public Text Nivel;
     public Text AppleAmount;
     private bool facingRight;
-    private Transform myTransform;
+    public Transform myTransform;
     private bool jump = false;
     public float jumpForce;
     public bool isGround;
@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
     private Collision2D playerCollision;
     private bool IsRunning;
     private SpriteRenderer PlayerSpriteRender;
+    private string enemieName;
+    public bool enemieSpotCollide;
 
 
     // Start is called before the first frame update
@@ -58,19 +60,8 @@ public class Player : MonoBehaviour
             life.rectTransform.sizeDelta = new Vector2(ActualLife / MaxLife * 182, 11.43732f);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            IsRunning = true;
-            Correr(IsRunning);
-            speed = 5;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            IsRunning = false;
-            Correr(IsRunning);
-            speed = 2;
-        }
 
+        inputShiftCorrer();
         Experience();
         Deslizar(playerCollision);
         Curar();
@@ -146,6 +137,21 @@ public class Player : MonoBehaviour
         {
             myTransform.parent = null;
         }
+
+       
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "OutOfZone" && enemieSpotCollide == true)
+        {
+            enemieSpotCollide = false;
+        }
+        if (collision.transform.tag == "EnemieSpot" && enemieSpotCollide == false)
+        {
+            enemieSpotCollide = true;
+        }
+       
     }
 
     void JumpPlayer()
@@ -205,6 +211,22 @@ public class Player : MonoBehaviour
         {
             ActualLife = ActualLife + 20;
             AppleAmount.text = (int.Parse(AppleAmount.text) - 1).ToString();
+        }
+    }
+
+    void inputShiftCorrer()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            IsRunning = true;
+            Correr(IsRunning);
+            speed = 5;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            IsRunning = false;
+            Correr(IsRunning);
+            speed = 2;
         }
     }
 
