@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DropaMaça : MonoBehaviour
 {
@@ -21,9 +22,16 @@ public class DropaMaça : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
+        try
         {
-            apple.AddComponent<Rigidbody2D>();
+            if (collision.transform.tag == "Player")
+            {
+                apple.AddComponent<Rigidbody2D>();
+            }
+        }catch(Exception e)
+        {
+            Debug.Log(e);
         }
+        
     }
 }

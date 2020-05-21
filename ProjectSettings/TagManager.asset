@@ -11,6 +11,8 @@ TagManager:
   - "Ma\xE7a"
   - EnemieSpot
   - OutOfZone
+  - FireBall
+  - Enemie
   layers:
   - Default
   - TransparentFX

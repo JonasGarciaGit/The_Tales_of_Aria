@@ -13,16 +13,19 @@ public class Player : MonoBehaviour
     public float speed = 2;
     private float horizontal;
     public Image life;
-    public float ActualLife;
+    public Image mana;
+    public float ActualMana;
+    public float MaxMana = 182.0f;
+    private float ActualLife;
     public float MaxLife = 182.0f;
     private bool damage = true;
     private float deadlyDamage = 0.0f;
     public Image Exp;
-    public float ActualExp;
+    private float ActualExp;
     public float MaxExp = 183.0f;
     public Text Nivel;
     public Text AppleAmount;
-    private bool facingRight;
+    public bool facingRight;
     public Transform myTransform;
     private bool jump = false;
     public float jumpForce;
@@ -31,6 +34,9 @@ public class Player : MonoBehaviour
     private Collision2D playerCollision;
     private bool IsRunning;
     private SpriteRenderer PlayerSpriteRender;
+    public GameObject Armas;
+    private GameObject Enemie;
+    public float WeaponDamage;
     private string enemieName;
     public bool enemieSpotCollide;
 
@@ -43,7 +49,7 @@ public class Player : MonoBehaviour
         myTransform = GetComponent<Transform>();
         PlayerSpriteRender = GetComponent<SpriteRenderer>();
         ActualLife = MaxLife;
-
+        ActualMana = MaxMana;
     }
 
     // Update is called once per frame
@@ -59,16 +65,64 @@ public class Player : MonoBehaviour
         {
             life.rectTransform.sizeDelta = new Vector2(ActualLife / MaxLife * 182, 11.43732f);
         }
+        if(ActualMana > 0 && ActualMana <= MaxMana)
+        {
+            mana.rectTransform.sizeDelta = new Vector2(ActualMana / MaxMana * 182, 11.43732f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            IsRunning = true;
+            Correr(IsRunning);
+            speed = 5;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            IsRunning = false;
+            Correr(IsRunning);
+            speed = 2;
+        }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            try
+            {
+                this.gameObject.GetComponent<FireBallMagic>().StartCoroutine("SpellMagic", true);
+                ActualMana = this.gameObject.GetComponent<FireBallMagic>().ActualMana;
+                if (Enemie != null)
+                {
+                    if (this.gameObject.GetComponent<FireBallMagic>().Enemie.name == Enemie.name)
+                    {
+            
+                        Enemie = Enemie;
+                    }
+                    else
+                    {
+
+                        Enemie = this.gameObject.GetComponent<FireBallMagic>().Enemie;
+                    }
+                }
+                else
+                {
+                    Enemie = this.gameObject.GetComponent<FireBallMagic>().Enemie;
+                }
+            }
+            catch (Exception e)
+            {
+                Debug.Log(e);
+            }
+        }
 
 
-        inputShiftCorrer();
+		inputShiftCorrer();
         Experience();
+        levelUP();
         Deslizar(playerCollision);
         Curar();
     }
 
     void FixedUpdate()
     {
+        weaponDamage();
 
         if (horizontal != 0)
         {
@@ -100,6 +154,7 @@ public class Player : MonoBehaviour
     }
 
 
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         playerCollision = collision;
@@ -124,6 +179,24 @@ public class Player : MonoBehaviour
             Invoke("RecarregarJogo", 4f);
             gameObject.SetActive(false);
         }
+        if (collision.gameObject.tag == "Enemie")
+        {
+            if (Enemie != null)
+            {
+                if(collision.gameObject.name == Enemie.name)
+                {
+                    Enemie = Enemie;
+                }
+                else
+                {
+                   Enemie = collision.gameObject;
+                }
+            }
+            else
+            {
+                Enemie = collision.gameObject;
+            }
+        }
     }
 
     void RecarregarJogo()
@@ -137,11 +210,9 @@ public class Player : MonoBehaviour
         {
             myTransform.parent = null;
         }
-
-       
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    
+        private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "OutOfZone" && enemieSpotCollide == true)
         {
@@ -207,7 +278,7 @@ public class Player : MonoBehaviour
 
     void Curar()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2) && int.Parse(AppleAmount.text) > 0)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && int.Parse(AppleAmount.text) > 0 && ActualLife < MaxLife)
         {
             ActualLife = ActualLife + 20;
             AppleAmount.text = (int.Parse(AppleAmount.text) - 1).ToString();
@@ -229,7 +300,6 @@ public class Player : MonoBehaviour
             speed = 2;
         }
     }
-
     void Correr(bool isRunning)
     {
         if (isRunning)
@@ -247,19 +317,49 @@ public class Player : MonoBehaviour
 
     void Experience()
     {
+        try {
+            if (Enemie != null)
+            {
+                if (Enemie.gameObject.active == false)
+                {
+                    ActualExp = ActualExp + Enemie.GetComponent<EnemieTeste>().ExpEnemie;
+                    Enemie = null;
+                    this.gameObject.GetComponent<FireBallMagic>().fireball.GetComponent<DestroyObject>().destroy = true;
+                    this.gameObject.GetComponent<FireBallMagic>().Enemie = null;
+                }
+            }
+
+        } catch(Exception e)
+        {
+            Debug.Log(e);
+        }
+ 
+    }
+
+    void levelUP()
+    {
         if (ActualExp <= MaxExp)
         {
-            Exp.rectTransform.sizeDelta = new Vector2(ActualExp / MaxExp * 183, 9.60f);
+            Exp.rectTransform.sizeDelta = new Vector2(ActualExp / MaxExp * 208f, 9.60f);
         }
         else
         {
-            ActualExp = 0;
+            if(ActualExp <= 0)
+            {
+                ActualExp = 0;
+            }
+            if (ActualExp >= MaxExp)
+            {
+                ActualExp = ActualExp - MaxExp;
+            }
             int Levelup = int.Parse(Nivel.text) + 1;
             Nivel.text = Levelup.ToString();
-            MaxExp = MaxExp * 1.8f;
+            MaxExp = MaxExp * 1.2f;
         }
     }
+    
 
+ 
     //Criando uma corotina para deixar o personagem invencivel após sofrer dano.
     IEnumerator Invencible()
     {
@@ -272,6 +372,12 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         damage = true;
+    }
+
+    public float weaponDamage()
+    {
+        WeaponDamage = Armas.GetComponent<Armas>().weaponDamage;
+        return WeaponDamage;
     }
 
 }
