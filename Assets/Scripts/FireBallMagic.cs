@@ -53,7 +53,7 @@ public class FireBallMagic : MonoBehaviour
 
         if (ActualMana >= costMana)
         {
-            fireball = Instantiate(fireBallPrefab, new Vector3(positionX + 2, positionY, positionZ), Quaternion.identity);
+            fireball = Instantiate(fireBallPrefab, new Vector3(positionX + 1, positionY, positionZ), Quaternion.identity);
             fxGame.PlayOneShot(fxFireBall);
             Rigidbody2D fireballRigidBody = fireball.GetComponent<Rigidbody2D>();
             SpriteRenderer fireballSpriteRender = fireball.GetComponent<SpriteRenderer>();
@@ -74,6 +74,8 @@ public class FireBallMagic : MonoBehaviour
             Destroy(fireball);
             Instantiate(fireball.GetComponent<DestroyObject>().ExplosionPrefab, new Vector3(fireball.transform.position.x, fireball.transform.position.y, fireball.transform.position.z), Quaternion.identity);
         }
+
+
     }
 
 

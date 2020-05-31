@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
     public static Player Instance { get; private set; }
     public GameObject InventoryCanvas;
     public bool activeInventory;
+    public int fireBoolCooldown;
+    public string enemieSpotName;
 
 
     private void Awake()
@@ -52,7 +54,7 @@ public class Player : MonoBehaviour
         inventory = new Inventory(UseItem);
         uiInventory.SetInventory(inventory);
         uiInventory.SetPlayer(this);
-        
+
     }
     // Start is called before the first frame update
     void Start()
@@ -65,6 +67,7 @@ public class Player : MonoBehaviour
         ActualMana = MaxMana;
         activeInventory = false;
         InventoryCanvas.SetActive(false);
+        fireBoolCooldown = 0;
     }
 
     private void UseItem(Item item)
@@ -98,7 +101,7 @@ public class Player : MonoBehaviour
         {
             life.rectTransform.sizeDelta = new Vector2(ActualLife / MaxLife * 182, 11.43732f);
         }
-        if(ActualMana > 0 && ActualMana <= MaxMana)
+        if (ActualMana > 0 && ActualMana <= MaxMana)
         {
             mana.rectTransform.sizeDelta = new Vector2(ActualMana / MaxMana * 182, 11.43732f);
         }
@@ -115,17 +118,18 @@ public class Player : MonoBehaviour
             Correr(IsRunning);
             speed = 2;
         }
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && playerAnimator.GetBool("IsGrounded") == true && fireBoolCooldown == 0)
         {
             try
             {
                 this.gameObject.GetComponent<FireBallMagic>().StartCoroutine("SpellMagic", true);
                 ActualMana = this.gameObject.GetComponent<FireBallMagic>().ActualMana;
+                StartCoroutine("ConjuringFireballAnimationControl", true);
                 if (Enemie != null)
                 {
                     if (this.gameObject.GetComponent<FireBallMagic>().Enemie.name == Enemie.name)
                     {
-            
+
                         Enemie = Enemie;
                     }
                     else
@@ -144,9 +148,16 @@ public class Player : MonoBehaviour
                 Debug.Log(e);
             }
         }
+
+        if (ActualLife <= 0)
+        {
+            Invoke("RecarregarJogo", 4f);
+            gameObject.SetActive(false);
+        }
+
         if (Input.GetKeyDown(KeyCode.I))
         {
-            if(activeInventory == false)
+            if (activeInventory == false)
             {
                 InventoryCanvas.SetActive(true);
                 activeInventory = true;
@@ -157,11 +168,11 @@ public class Player : MonoBehaviour
                 activeInventory = false;
             }
 
-            
+
         }
 
 
-		inputShiftCorrer();
+        inputShiftCorrer();
         Experience();
         levelUP();
         Deslizar(playerCollision);
@@ -218,16 +229,7 @@ public class Player : MonoBehaviour
             {
                 myTransform.parent = collision.transform;
             }
-            if (collision.gameObject.tag == "arma" && damage == true)
-            {
-                ActualLife = ActualLife - 20;
-                StartCoroutine("Invencible");
-            }
-            if (ActualLife <= 0)
-            {
-                Invoke("RecarregarJogo", 4f);
-                gameObject.SetActive(false);
-            }
+
             if (collision.gameObject.tag == "Enemie")
             {
                 if (Enemie != null)
@@ -246,9 +248,10 @@ public class Player : MonoBehaviour
                     Enemie = collision.gameObject;
                 }
             }
-        }catch(Exception e)
+        }
+        catch (Exception e)
         {
-            
+
         }
     }
 
@@ -264,8 +267,8 @@ public class Player : MonoBehaviour
             myTransform.parent = null;
         }
     }
-    
-        private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "OutOfZone" && enemieSpotCollide == true)
         {
@@ -274,16 +277,26 @@ public class Player : MonoBehaviour
         if (collision.transform.tag == "EnemieSpot" && enemieSpotCollide == false)
         {
             enemieSpotCollide = true;
+            enemieSpotName = collision.gameObject.name;
         }
 
         ItemWorld itemWorld = collision.GetComponent<ItemWorld>();
-        if(itemWorld != null)
+        if (itemWorld != null)
         {
             //Tocando o item
             inventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
         }
-       
+
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemie" && damage == true && Enemie.GetComponent<IAEnemie>().enemieAnimator.GetBool("Attacking") == true)
+        {
+            ActualLife = ActualLife - 20;
+            StartCoroutine("Invencible");
+        }
     }
 
     void JumpPlayer()
@@ -339,7 +352,7 @@ public class Player : MonoBehaviour
 
     void HealthWithApple()
     {
-     ActualLife = ActualLife + 20;
+        ActualLife = ActualLife + 20;
     }
 
     void HealthWithPotion()
@@ -360,7 +373,7 @@ public class Player : MonoBehaviour
             Correr(IsRunning);
             speed = 5;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        if (Input.GetKeyUp(KeyCode.LeftShift) || horizontal == 0f)
         {
             IsRunning = false;
             Correr(IsRunning);
@@ -384,23 +397,25 @@ public class Player : MonoBehaviour
 
     void Experience()
     {
-        try {
+        try
+        {
             if (Enemie != null)
             {
                 if (Enemie.gameObject.active == false)
                 {
-                    ActualExp = ActualExp + Enemie.GetComponent<EnemieTeste>().ExpEnemie;
+                    ActualExp = ActualExp + Enemie.GetComponent<EnemieDeath>().ExpEnemie;
                     Enemie = null;
                     this.gameObject.GetComponent<FireBallMagic>().fireball.GetComponent<DestroyObject>().destroy = true;
                     this.gameObject.GetComponent<FireBallMagic>().Enemie = null;
                 }
             }
 
-        } catch(Exception e)
+        }
+        catch (Exception e)
         {
             Debug.Log(e);
         }
- 
+
     }
 
     void levelUP()
@@ -411,7 +426,7 @@ public class Player : MonoBehaviour
         }
         else
         {
-            if(ActualExp <= 0)
+            if (ActualExp <= 0)
             {
                 ActualExp = 0;
             }
@@ -463,5 +478,27 @@ public class Player : MonoBehaviour
             InventoryCanvas.SetActive(false);
             activeInventory = false;
         }
+    }
+
+    IEnumerator ConjuringFireballAnimationControl()
+    {
+        playerAnimator.SetBool("Conjuring", true);
+        fireBoolCooldown = 1;
+        float tempSpeed = speed;
+        speed = 0;
+
+        yield return new WaitForSeconds(0.5f);
+        playerAnimator.SetBool("Conjuring", false);
+        fireBoolCooldown = 0;
+
+        if (playerAnimator.GetBool("Walking") == true)
+        {
+            speed = 2;
+        }
+        if (playerAnimator.GetBool("Running") == true)
+        {
+            speed = 5;
+        }
+
     }
 }

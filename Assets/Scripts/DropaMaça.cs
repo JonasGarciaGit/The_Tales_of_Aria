@@ -7,12 +7,11 @@ public class DropaMaça : MonoBehaviour
 {
 
     public GameObject apple;
-
- 
+    
     // Start is called before the first frame update
     void Start()
     {
-        apple = this.transform.parent.gameObject;
+
     }
 
     // Update is called once per frame
@@ -27,7 +26,7 @@ public class DropaMaça : MonoBehaviour
         {
             if (collision.transform.tag == "Player")
             {
-               apple.AddComponent<Rigidbody2D>();
+                apple.AddComponent<Rigidbody2D>();
             }
         }catch(Exception e)
         {

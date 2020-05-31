@@ -5,22 +5,22 @@ using UnityEngine;
 public class MovimentaPedra : MonoBehaviour
 {
 
-    public Transform obstaculo;
-    public SpriteRenderer pedra;
+   
+    public GameObject pedra;
     public Transform[] ponto;
     public float speed;
-    public int idTarget;
+    public int idTarget = 1;
+    public Transform obstaculo;
     // Start is called before the first frame update
     void Start()
     {
-        pedra = obstaculo.gameObject.GetComponent<SpriteRenderer>();
-        obstaculo.position = ponto[0].position;
-        idTarget = 1;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (obstaculo != null)
         {
             obstaculo.position = Vector3.MoveTowards(obstaculo.position, ponto[idTarget].position, speed * Time.deltaTime);
