@@ -8,6 +8,7 @@ public class Carregar : MonoBehaviour
     bool podeInteragir = false;
     public GameObject Jogador;
     public string CenaACareggar;
+    public Font font;
     
     void Update(){
         if(podeInteragir == true && Input.GetKeyDown(KeyCode.E)){
@@ -15,18 +16,27 @@ public class Carregar : MonoBehaviour
             SceneManager.LoadScene(CenaACareggar);
         }
     }
-    void OnTriggerEnter2D(){
-        podeInteragir = true;
+    void OnTriggerEnter2D(Collider2D collision){
+        if (collision.gameObject.tag == "Player")
+        {
+            podeInteragir = true;
+        }
     }
-    void OnTriggerExit2D(){
-        podeInteragir = false;
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            podeInteragir = false;
+        }
     }
 
     void OnGUI(){
         if(podeInteragir == true){
             GUIStyle style = new GUIStyle();
             style.alignment = TextAnchor.MiddleCenter;
-            GUI.skin.label.fontSize = 20;
+            GUI.skin.label.fontSize = 10;
+            GUI.skin.font = font;
+            GUI.color = Color.yellow;
             GUI.Label(new Rect(Screen.width/2 - 50, Screen.height/2 + 50, 200,30),"Pressione 'E'");
         }
     }

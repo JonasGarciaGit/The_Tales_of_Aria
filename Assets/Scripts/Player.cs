@@ -16,12 +16,12 @@ public class Player : MonoBehaviour
     public Image mana;
     public float ActualMana;
     public float MaxMana = 182.0f;
-    private float ActualLife;
+    public float ActualLife;
     public float MaxLife = 182.0f;
     private bool damage = true;
     private float deadlyDamage = 0.0f;
     public Image Exp;
-    private float ActualExp;
+    public float ActualExp;
     public float MaxExp = 183.0f;
     public Text Nivel;
     public Text AppleAmount;
@@ -39,8 +39,21 @@ public class Player : MonoBehaviour
     public float WeaponDamage;
     private string enemieName;
     public bool enemieSpotCollide;
+    public Inventory inventory;
+    public UI_Inventory uiInventory;
+    public static Player Instance { get; private set; }
+    public GameObject InventoryCanvas;
+    public bool activeInventory;
 
 
+    private void Awake()
+    {
+        Instance = this;
+        inventory = new Inventory(UseItem);
+        uiInventory.SetInventory(inventory);
+        uiInventory.SetPlayer(this);
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -50,8 +63,28 @@ public class Player : MonoBehaviour
         PlayerSpriteRender = GetComponent<SpriteRenderer>();
         ActualLife = MaxLife;
         ActualMana = MaxMana;
+        activeInventory = false;
+        InventoryCanvas.SetActive(false);
     }
 
+    private void UseItem(Item item)
+    {
+        switch (item.itemType)
+        {
+            case Item.ItemType.HealthPotion:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
+                HealthWithPotion();
+                break;
+            case Item.ItemType.ManaPotion:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
+                RecoveryMP();
+                break;
+            case Item.ItemType.Apple:
+                HealthWithApple();
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.Apple, amount = 1 });
+                break;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -111,13 +144,27 @@ public class Player : MonoBehaviour
                 Debug.Log(e);
             }
         }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if(activeInventory == false)
+            {
+                InventoryCanvas.SetActive(true);
+                activeInventory = true;
+            }
+            else
+            {
+                InventoryCanvas.SetActive(false);
+                activeInventory = false;
+            }
+
+            
+        }
 
 
 		inputShiftCorrer();
         Experience();
         levelUP();
         Deslizar(playerCollision);
-        Curar();
     }
 
     void FixedUpdate()
@@ -157,45 +204,51 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        playerCollision = collision;
-        if (collision.gameObject.tag == "Chao" || collision.gameObject.tag == "plataformaMovel")
+        try
         {
-            isGround = true;
-            maxJump = false;
-            playerAnimator.SetBool("Jump", false);
-            playerAnimator.SetBool("IsGrounded", true);
-        }
-        if (collision.transform.tag == "plataformaMovel")
-        {
-            myTransform.parent = collision.transform;
-        }
-        if (collision.gameObject.tag == "arma" && damage == true)
-        {
-            ActualLife = ActualLife - 20;
-            StartCoroutine("Invencible");
-        }
-        if (ActualLife <= 0)
-        {
-            Invoke("RecarregarJogo", 4f);
-            gameObject.SetActive(false);
-        }
-        if (collision.gameObject.tag == "Enemie")
-        {
-            if (Enemie != null)
+            playerCollision = collision;
+            if (collision.gameObject.tag == "Chao" || collision.gameObject.tag == "plataformaMovel")
             {
-                if(collision.gameObject.name == Enemie.name)
+                isGround = true;
+                maxJump = false;
+                playerAnimator.SetBool("Jump", false);
+                playerAnimator.SetBool("IsGrounded", true);
+            }
+            if (collision.transform.tag == "plataformaMovel")
+            {
+                myTransform.parent = collision.transform;
+            }
+            if (collision.gameObject.tag == "arma" && damage == true)
+            {
+                ActualLife = ActualLife - 20;
+                StartCoroutine("Invencible");
+            }
+            if (ActualLife <= 0)
+            {
+                Invoke("RecarregarJogo", 4f);
+                gameObject.SetActive(false);
+            }
+            if (collision.gameObject.tag == "Enemie")
+            {
+                if (Enemie != null)
                 {
-                    Enemie = Enemie;
+                    if (collision.gameObject.name == Enemie.name)
+                    {
+                        Enemie = Enemie;
+                    }
+                    else
+                    {
+                        Enemie = collision.gameObject;
+                    }
                 }
                 else
                 {
-                   Enemie = collision.gameObject;
+                    Enemie = collision.gameObject;
                 }
             }
-            else
-            {
-                Enemie = collision.gameObject;
-            }
+        }catch(Exception e)
+        {
+            
         }
     }
 
@@ -221,6 +274,14 @@ public class Player : MonoBehaviour
         if (collision.transform.tag == "EnemieSpot" && enemieSpotCollide == false)
         {
             enemieSpotCollide = true;
+        }
+
+        ItemWorld itemWorld = collision.GetComponent<ItemWorld>();
+        if(itemWorld != null)
+        {
+            //Tocando o item
+            inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
         }
        
     }
@@ -276,13 +337,19 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Curar()
+    void HealthWithApple()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2) && int.Parse(AppleAmount.text) > 0 && ActualLife < MaxLife)
-        {
-            ActualLife = ActualLife + 20;
-            AppleAmount.text = (int.Parse(AppleAmount.text) - 1).ToString();
-        }
+     ActualLife = ActualLife + 20;
+    }
+
+    void HealthWithPotion()
+    {
+        ActualLife = ActualLife + 50;
+    }
+
+    void RecoveryMP()
+    {
+        ActualMana = ActualMana + 50;
     }
 
     void inputShiftCorrer()
@@ -357,9 +424,13 @@ public class Player : MonoBehaviour
             MaxExp = MaxExp * 1.2f;
         }
     }
-    
 
- 
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
+
+
     //Criando uma corotina para deixar o personagem invencivel após sofrer dano.
     IEnumerator Invencible()
     {
@@ -380,4 +451,17 @@ public class Player : MonoBehaviour
         return WeaponDamage;
     }
 
+    public void openInventory()
+    {
+        if (activeInventory == false)
+        {
+            InventoryCanvas.SetActive(true);
+            activeInventory = true;
+        }
+        else
+        {
+            InventoryCanvas.SetActive(false);
+            activeInventory = false;
+        }
+    }
 }

@@ -11,12 +11,14 @@ public class Maça : MonoBehaviour
     public GameObject apple;
     private Transform myTransformApple;
     private Rigidbody2D myRigidBody;
-    public Text AppleAmount;
+    //public Text AppleAmount;
     public Transform myPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
+        apple = this.gameObject;
+        myPlayer = GameObject.Find("Player").GetComponent<Transform>();
         myTransformApple = GetComponent<Transform>();
     }
 
@@ -26,7 +28,7 @@ public class Maça : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && podeColetar == true)
         {
             Destroy(this.apple);
-            AppleAmount.text = (int.Parse(AppleAmount.text) + 1).ToString(); 
+            //AppleAmount.text = (int.Parse(AppleAmount.text) + 1).ToString(); 
         }
     }
     private void FixedUpdate()
