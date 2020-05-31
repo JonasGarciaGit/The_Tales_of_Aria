@@ -79773,6 +79773,7 @@ GameObject:
   - component: {fileID: 1210819167}
   - component: {fileID: 1210819170}
   - component: {fileID: 1210819166}
+  - component: {fileID: 1210819168}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Enemie
@@ -79832,6 +79833,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1210819168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210819164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f63910f9cc51142aa48626b6744068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemieLife: 0
+  enemieMaxLife: 50
+  Player: {fileID: 1737198940}
+  Enemie: {fileID: 1210819164}
+  ExpEnemie: 50
+  EnemieAlive: 1
+  hitPrefab: {fileID: 8384705423430626994, guid: 2690972ec79ea064a9d33c91c3c9cc7c,
+    type: 3}
+  coinPrefab: {fileID: 1094749273323857556, guid: 1709377b0bac71e4ca8abc0f6619bcb6,
+    type: 3}
+  fxGame: {fileID: 11557189}
+  fxDeath: {fileID: 8300000, guid: 2887ef7e2f44bc34abf1ce43fb01f4c4, type: 3}
 --- !u!50 &1210819169
 Rigidbody2D:
   serializedVersion: 4
@@ -127298,15 +127323,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5797131959674333663, guid: 5188e514cef46a4428d635e3f47289f9,
+        type: 3}
+      propertyPath: fxGame
+      value: 
+      objectReference: {fileID: 11557189}
+    - target: {fileID: 5797131959674333663, guid: 5188e514cef46a4428d635e3f47289f9,
+        type: 3}
+      propertyPath: fxFireBall
+      value: 
+      objectReference: {fileID: 8300000, guid: a272418358c9d334c9d5f0b806191bce, type: 3}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54
+      value: 115.79
       objectReference: {fileID: 0}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2
+      value: 1.52
       objectReference: {fileID: 0}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}

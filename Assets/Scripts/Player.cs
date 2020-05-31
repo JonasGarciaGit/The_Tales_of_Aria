@@ -105,6 +105,10 @@ public class Player : MonoBehaviour
         {
             mana.rectTransform.sizeDelta = new Vector2(ActualMana / MaxMana * 182, 11.43732f);
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine("playerSlashing", true);
+        }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -501,4 +505,14 @@ public class Player : MonoBehaviour
         }
 
     }
+
+    IEnumerator playerSlashing()
+    {
+        playerAnimator.SetBool("Attacking", true);
+
+        yield return new WaitForSeconds(0.2f); 
+        playerAnimator.SetBool("Attacking", false);
+       
+    }
+
 }
