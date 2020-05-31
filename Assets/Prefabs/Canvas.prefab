@@ -2051,7 +2051,7 @@ RectTransform:
   - {fileID: 6333209040129960152}
   - {fileID: 6333209041004066649}
   m_Father: {fileID: 6333209040721754331}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2169,8 +2169,6 @@ MonoBehaviour:
   contador: 0
   podeInteragir: 0
   npc: {fileID: 0}
-  shop: {fileID: 6333209040479595257}
-  loadshop: {fileID: 6333209040721754334}
 --- !u!1 &6333209039936332771
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,8 +3974,8 @@ RectTransform:
   - {fileID: 6333209039961721832}
   - {fileID: 6333209039781099400}
   - {fileID: 6333209040071193062}
-  - {fileID: 6333209039905192818}
   - {fileID: 6333209040980954645}
+  - {fileID: 6333209039905192818}
   - {fileID: 6333209039905192822}
   - {fileID: 6333209040479595256}
   m_Father: {fileID: 0}
@@ -5331,7 +5329,7 @@ RectTransform:
   - {fileID: 6333209039359383384}
   - {fileID: 6333209040949865095}
   m_Father: {fileID: 6333209040721754331}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}

@@ -26,7 +26,7 @@ public class LoadShop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log(playerMoney);
         loadPlayerMoney();
         openShop();
     }
@@ -62,7 +62,7 @@ public class LoadShop : MonoBehaviour
             switch (id)
             {
                 case "Apple":
-                if (playerMoney >= 10)
+                if (playerMoney >= 10 && playerMoney != 0)
                 {
                     TextMeshProUGUI text = GameObject.Find("TextApple").GetComponent<TextMeshProUGUI>();
                     text.text = (int.Parse(text.text) - 1).ToString();
@@ -71,7 +71,7 @@ public class LoadShop : MonoBehaviour
                 }
                     break;
                 case "PotionHP":
-                if (playerMoney >= 25)
+                if (playerMoney >= 25 && playerMoney != 0 && playerMoney > 0)
                 {
                     TextMeshProUGUI textHP = GameObject.Find("TextPotionHP").GetComponent<TextMeshProUGUI>();
                     textHP.text = (int.Parse(textHP.text) - 1).ToString();
@@ -80,7 +80,7 @@ public class LoadShop : MonoBehaviour
                 }
                     break;
                 case "PotionMP":
-                if (playerMoney >= 25)
+                if (playerMoney >= 25 && playerMoney != 0 && playerMoney > 0)
                 {
                     TextMeshProUGUI textMP = GameObject.Find("TextPotionMP").GetComponent<TextMeshProUGUI>();
                     textMP.text = (int.Parse(textMP.text) - 1).ToString();
@@ -115,17 +115,19 @@ public class LoadShop : MonoBehaviour
     {
         try
         {
-            if(playerMoney - amount >= 0)
-            {
+                if(playerMoney - amount <= 0)
+                {
+                    playerMoney = 0;
+                }
+
                 List<Item> itemList = GameObject.Find("Player").GetComponent<Player>().inventory.GetItemList();
                 foreach (Item item in itemList)
                 {
-                    if (item.itemType.ToString().Equals("Coin"))
-                    {
-                        GameObject.Find("Player").GetComponent<Player>().inventory.RemoveItem(new Item { itemType = Item.ItemType.Coin, amount = amount });
-                    }
+                if (item.itemType.ToString().Equals("Coin"))
+                {
+                    GameObject.Find("Player").GetComponent<Player>().inventory.RemoveItem(new Item { itemType = Item.ItemType.Coin, amount = amount });
                 }
-            }
+                }
         }catch(Exception e)
         {
 

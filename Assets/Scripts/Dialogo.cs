@@ -21,12 +21,15 @@ public class Dialogo : MonoBehaviour
     public bool podeInteragir = false;
     [SerializeField]
     public GameObject npc;
+    public LoadShop loadshop;
+    private Player player;
     // Start is called before the first frame update
     void Start()
     {
         nome.text = nomeDoNpc;
         frase.text = frases[contador];
         caixaDialogo.SetActive(false);
+        player = GameObject.Find("Player").GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -50,6 +53,15 @@ public class Dialogo : MonoBehaviour
         }
         else
         {
+            if(npc.gameObject.tag == "Merchant")
+            {
+                loadshop.canOpenShop = true;
+                loadshop.Shop.SetActive(true);
+                player.activeInventory = true;
+                player.InventoryCanvas.SetActive(true);
+                
+
+            }
             contador = 0;
             caixaDialogo.SetActive(false);
             podeInteragir = false;
