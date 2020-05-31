@@ -75,16 +75,25 @@ public class Player : MonoBehaviour
         switch (item.itemType)
         {
             case Item.ItemType.HealthPotion:
-                inventory.RemoveItem(new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
-                HealthWithPotion();
+                if(ActualLife < MaxLife)
+                {
+                    inventory.RemoveItem(new Item { itemType = Item.ItemType.HealthPotion, amount = 1 });
+                    HealthWithPotion();
+                }
                 break;
             case Item.ItemType.ManaPotion:
-                inventory.RemoveItem(new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
-                RecoveryMP();
+                if(ActualMana < MaxMana)
+                {
+                    inventory.RemoveItem(new Item { itemType = Item.ItemType.ManaPotion, amount = 1 });
+                    RecoveryMP();
+                }
                 break;
             case Item.ItemType.Apple:
-                HealthWithApple();
-                inventory.RemoveItem(new Item { itemType = Item.ItemType.Apple, amount = 1 });
+                if(ActualLife < MaxLife)
+                {
+                    HealthWithApple();
+                    inventory.RemoveItem(new Item { itemType = Item.ItemType.Apple, amount = 1 });
+                }
                 break;
         }
     }
@@ -92,6 +101,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
+        captureEnemieObjectFireBall();
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -145,7 +155,7 @@ public class Player : MonoBehaviour
                 else
                 {
                     Enemie = this.gameObject.GetComponent<FireBallMagic>().Enemie;
-                }
+                } 
             }
             catch (Exception e)
             {
@@ -291,6 +301,11 @@ public class Player : MonoBehaviour
             inventory.AddItem(itemWorld.GetItem());
             itemWorld.DestroySelf();
         }
+        if(collision.gameObject.tag == "Coin")
+        {
+            inventory.AddItem(new Item {itemType = Item.ItemType.Coin, amount = collision.gameObject.GetComponent<AmountCoinsDrop>().amountCoins});
+            Destroy(collision.gameObject);
+        }
 
     }
 
@@ -356,17 +371,38 @@ public class Player : MonoBehaviour
 
     void HealthWithApple()
     {
-        ActualLife = ActualLife + 20;
+        if(ActualLife + 20 >= MaxLife)
+        {
+            ActualLife = MaxLife;
+        }
+        else
+        {
+            ActualLife = ActualLife + 20;
+        }
     }
 
     void HealthWithPotion()
     {
-        ActualLife = ActualLife + 50;
+        if (ActualLife + 50 >= MaxLife)
+        {
+            ActualLife = MaxLife;
+        }
+        else
+        {
+            ActualLife = ActualLife + 50;
+        }
     }
 
     void RecoveryMP()
     {
-        ActualMana = ActualMana + 50;
+        if(ActualMana + 50 >= MaxMana)
+        {
+            ActualMana = MaxMana;
+        }
+        else
+        {
+            ActualMana = ActualMana + 50;
+        }
     }
 
     void inputShiftCorrer()
@@ -513,6 +549,22 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(0.2f); 
         playerAnimator.SetBool("Attacking", false);
        
+    }
+
+    void captureEnemieObjectFireBall()
+    {
+        try
+        {
+            if(Enemie == null)
+            {
+                Enemie = GameObject.Find("Player").GetComponent<FireBallMagic>().Enemie;
+            }
+        }
+        catch(Exception e)
+        {
+           
+        }
+
     }
 
 }

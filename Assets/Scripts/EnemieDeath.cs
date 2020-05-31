@@ -43,7 +43,17 @@ public class EnemieDeath : MonoBehaviour
             fxGame.PlayOneShot(fxDeath);
             Destroy(tempEnemieDie, 10f);
             GameObject coin = Instantiate(coinPrefab, Enemie.transform.position, Enemie.transform.localRotation);
-            coin.GetComponent<Rigidbody2D>().AddForce(new Vector2(20f,300f));
+            coin.AddComponent<AmountCoinsDrop>();
+            switch (Enemie.name)
+            {
+                case "Slime":
+                    coin.GetComponent<AmountCoinsDrop>().amountCoins = 30;
+                    break;
+                case "Minotaur":
+                    coin.GetComponent<AmountCoinsDrop>().amountCoins = 60;
+                    break;
+            }
+            
             Destroy(coin, 20f);     
         }
 

@@ -17,6 +17,7 @@ TagManager:
   - Merchant
   - DeathZone
   - BossScene
+  - Coin
   layers:
   - Default
   - TransparentFX
@@ -33,8 +34,6 @@ TagManager:
   - Enemie
   - EnemieDie
   - Coin
-  - 
-  - 
   - 
   - 
   - 

@@ -26,7 +26,6 @@ public class LoadShop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(playerMoney);
         loadPlayerMoney();
         openShop();
     }
