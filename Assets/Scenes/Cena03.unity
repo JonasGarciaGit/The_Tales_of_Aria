@@ -9348,7 +9348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &179175093
 Transform:
   m_ObjectHideFlags: 0
@@ -16899,6 +16899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209040721754335, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6333209040735900735, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
@@ -127386,12 +127391,12 @@ PrefabInstance:
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 94.54
+      value: 57.86
       objectReference: {fileID: 0}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.26
+      value: -1.93
       objectReference: {fileID: 0}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}

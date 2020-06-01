@@ -13,6 +13,7 @@ public class EnemieMoviment : MonoBehaviour
     public GameObject player;
     private bool playerIsRight;
     private int idTarget; // alvo
+    private Animator enemieAnimator;
 
 
     // Variaveis da função SeguirPlayer()
@@ -26,8 +27,8 @@ public class EnemieMoviment : MonoBehaviour
     {
         enemieSprite = enemie.gameObject.GetComponent<SpriteRenderer>();
         enemie.position = position[0].position;
+        enemieAnimator = enemie.gameObject.GetComponent<Animator>();
         idTarget = 1;
-
     }
 
     // Update is called once per frame
@@ -49,6 +50,8 @@ public class EnemieMoviment : MonoBehaviour
         {
             SeguirPlayer();
         }
+
+        controlarVelocidade();
     }
 
     public void Flip()
@@ -101,6 +104,17 @@ public class EnemieMoviment : MonoBehaviour
             {
                 Flip();  
             }
+        }
+    }
+
+    void controlarVelocidade()
+    {
+        if(enemieAnimator.GetBool("Attacking") == true)
+        {
+            speed = 0;
+        }else if(enemieAnimator.GetBool("Attacking") == false)
+        {
+            speed = 3;
         }
     }
 

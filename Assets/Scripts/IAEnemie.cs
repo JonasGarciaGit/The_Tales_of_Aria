@@ -14,11 +14,6 @@ public class IAEnemie : MonoBehaviour
     public AudioClip fxAttacking;
 
 
-
-
-    //variaveis necessárias para o controle do attack
-    float tempEnemieSpeed;
-
     // Start is called before the first frame update
     void Start() 
     { 
@@ -52,11 +47,6 @@ public class IAEnemie : MonoBehaviour
         enemieAnimator.SetBool("Walking", false);
         enemieAnimator.SetBool("Attacking", true);
         attackingPlayer = true;
-
-        //Speed no script Enemie
-        tempEnemieSpeed = enemieObject.GetComponent<EnemieMoviment>().speed;
-        enemieObject.GetComponent<EnemieMoviment>().speed = 0;
-
     }
 
     void StopAttack()
@@ -64,10 +54,6 @@ public class IAEnemie : MonoBehaviour
         enemieAnimator.SetBool("Walking", true);
         enemieAnimator.SetBool("Attacking", false);
         attackingPlayer = false;
-
-        //Manipulando velocidade do script inimigo
-        enemieObject.GetComponent<EnemieMoviment>().speed = tempEnemieSpeed;
-
     }
 
 }
