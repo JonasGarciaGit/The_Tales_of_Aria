@@ -15,6 +15,8 @@ public class EnemieDeath : MonoBehaviour
     public GameObject coinPrefab;
     public AudioSource fxGame;
     public AudioClip fxDeath;
+    public GameObject myEnemie;
+   
 
     // Start is called before the first frame update
 
@@ -63,10 +65,12 @@ public class EnemieDeath : MonoBehaviour
     {
         if(collision.transform.tag == "PlayerAttack")
         {
+            myEnemie = this.gameObject;
             weaponDamage = Player.GetComponent<Player>().WeaponDamage;
             enemieLife = enemieLife - weaponDamage;
+            Player.GetComponent<Player>().Enemie = myEnemie;
         }
-       
+
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

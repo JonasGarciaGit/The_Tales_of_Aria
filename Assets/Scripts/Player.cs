@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
     private bool IsRunning;
     private SpriteRenderer PlayerSpriteRender;
     public GameObject Armas;
-    private GameObject Enemie;
+    public GameObject Enemie;
     public float WeaponDamage;
     private string enemieName;
     public bool enemieSpotCollide;
@@ -48,6 +48,7 @@ public class Player : MonoBehaviour
     public string enemieSpotName;
 	public GameObject windCutPrefabDir;
     public GameObject windCutPrefabEsq;
+    public GameObject effectLevelUp;
 
 
     private void Awake()
@@ -476,6 +477,9 @@ public class Player : MonoBehaviour
             {
                 ActualExp = ActualExp - MaxExp;
             }
+            GameObject effect = Instantiate(effectLevelUp,new Vector3(myTransform.position.x,myTransform.position.y -0.5f,myTransform.position.z),Quaternion.identity);
+            effect.transform.Rotate(new Vector3(-90, 0, 0));
+            effect.transform.parent = myTransform;
             int Levelup = int.Parse(Nivel.text) + 1;
             Nivel.text = Levelup.ToString();
             MaxExp = MaxExp * 1.2f;

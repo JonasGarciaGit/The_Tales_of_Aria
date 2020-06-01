@@ -2145,7 +2145,7 @@ MonoBehaviour:
   enemieMaxLife: 40
   Player: {fileID: 98812801}
   Enemie: {fileID: 160909097}
-  ExpEnemie: 120
+  ExpEnemie: 200
   EnemieAlive: 1
   hitPrefab: {fileID: 8384705423430626994, guid: 2690972ec79ea064a9d33c91c3c9cc7c,
     type: 3}
@@ -2153,6 +2153,7 @@ MonoBehaviour:
     type: 3}
   fxGame: {fileID: 877684609}
   fxDeath: {fileID: 8300000, guid: 2887ef7e2f44bc34abf1ce43fb01f4c4, type: 3}
+  myEnemie: {fileID: 0}
 --- !u!1 &168427828
 GameObject:
   m_ObjectHideFlags: 0
@@ -25165,6 +25166,29 @@ PrefabInstance:
       propertyPath: InventoryCanvas
       value: 
       objectReference: {fileID: 111716809}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: windCutPrefab
+      value: 
+      objectReference: {fileID: 700181220397478706, guid: 556413bc838376a48b112018da0118ed,
+        type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: windCutPrefabDir
+      value: 
+      objectReference: {fileID: 700181220397478706, guid: 556413bc838376a48b112018da0118ed,
+        type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: windCutPrefabEsq
+      value: 
+      objectReference: {fileID: 7199852297355231286, guid: 1ce831f2a947c1845806fdafd0a2285c,
+        type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: effectLevelUp
+      value: 
+      objectReference: {fileID: 100000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
     - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: fxGame
