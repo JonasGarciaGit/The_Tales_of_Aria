@@ -53,7 +53,17 @@ public class FireBallMagic : MonoBehaviour
 
         if (ActualMana >= costMana)
         {
-            fireball = Instantiate(fireBallPrefab, new Vector3(positionX + 1, positionY, positionZ), Quaternion.identity);
+            
+            if(Player.GetComponent<Player>().facingRight == true)
+            {
+                fireball = Instantiate(fireBallPrefab, new Vector3(positionX - 1, positionY, positionZ), Quaternion.identity);
+            }else if (Player.GetComponent<Player>().facingRight == false)
+            {
+                fireball = Instantiate(fireBallPrefab, new Vector3(positionX + 1, positionY, positionZ), Quaternion.identity);
+            }
+
+
+
             fxGame.PlayOneShot(fxFireBall);
             Rigidbody2D fireballRigidBody = fireball.GetComponent<Rigidbody2D>();
             SpriteRenderer fireballSpriteRender = fireball.GetComponent<SpriteRenderer>();

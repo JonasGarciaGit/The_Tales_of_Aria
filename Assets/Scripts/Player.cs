@@ -46,7 +46,8 @@ public class Player : MonoBehaviour
     public bool activeInventory;
     public int fireBoolCooldown;
     public string enemieSpotName;
-	public GameObject windCutPrefab;
+	public GameObject windCutPrefabDir;
+    public GameObject windCutPrefabEsq;
 
 
     private void Awake()
@@ -556,11 +557,11 @@ public class Player : MonoBehaviour
 
         if (facingRight == false)
         {
-          tempWindCut = Instantiate(windCutPrefab, new Vector3(myTransform.position.x + 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
+          tempWindCut = Instantiate(windCutPrefabDir, new Vector3(myTransform.position.x + 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
         }
         else if (facingRight == true)
         {
-            tempWindCut = Instantiate(windCutPrefab, new Vector3(myTransform.position.x - 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
+            tempWindCut = Instantiate(windCutPrefabEsq, new Vector3(myTransform.position.x - 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
         }
 
         yield return new WaitForSeconds(0.2f); 

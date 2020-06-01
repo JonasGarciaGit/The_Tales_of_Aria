@@ -16828,7 +16828,7 @@ PrefabInstance:
     - target: {fileID: 6333209040721754331, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6333209040721754331, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
@@ -18001,7 +18001,7 @@ Transform:
   - {fileID: 374190239}
   - {fileID: 1266325897}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341285622
 GameObject:
@@ -127386,12 +127386,12 @@ PrefabInstance:
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 78.94
+      value: 94.54
       objectReference: {fileID: 0}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.2
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 5797131959674334753, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
@@ -127486,6 +127486,18 @@ PrefabInstance:
     - target: {fileID: 7461648422927844038, guid: 5188e514cef46a4428d635e3f47289f9,
         type: 3}
       propertyPath: windCutPrefab
+      value: 
+      objectReference: {fileID: 700181220397478706, guid: 556413bc838376a48b112018da0118ed,
+        type: 3}
+    - target: {fileID: 7461648422927844038, guid: 5188e514cef46a4428d635e3f47289f9,
+        type: 3}
+      propertyPath: windCutPrefabEsq
+      value: 
+      objectReference: {fileID: 7199852297355231286, guid: 1ce831f2a947c1845806fdafd0a2285c,
+        type: 3}
+    - target: {fileID: 7461648422927844038, guid: 5188e514cef46a4428d635e3f47289f9,
+        type: 3}
+      propertyPath: windCutPrefabDir
       value: 
       objectReference: {fileID: 700181220397478706, guid: 556413bc838376a48b112018da0118ed,
         type: 3}
