@@ -61,7 +61,7 @@ public class EnemieDeath : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "Player")
+        if(collision.transform.tag == "PlayerAttack")
         {
             weaponDamage = Player.GetComponent<Player>().WeaponDamage;
             enemieLife = enemieLife - weaponDamage;

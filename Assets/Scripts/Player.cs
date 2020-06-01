@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     public bool activeInventory;
     public int fireBoolCooldown;
     public string enemieSpotName;
+	public GameObject windCutPrefab;
 
 
     private void Awake()
@@ -502,8 +503,14 @@ public class Player : MonoBehaviour
 
     public float weaponDamage()
     {
-        WeaponDamage = Armas.GetComponent<Armas>().weaponDamage;
-        return WeaponDamage;
+        try
+        {
+            WeaponDamage = Armas.GetComponent<Armas>().weaponDamage;
+        }
+        catch (Exception e)
+        {
+
+        }        return WeaponDamage;
     }
 
     public void openInventory()
@@ -542,29 +549,42 @@ public class Player : MonoBehaviour
 
     }
 
-    IEnumerator playerSlashing()
+ IEnumerator playerSlashing()
     {
         playerAnimator.SetBool("Attacking", true);
+        GameObject tempWindCut = null;
+
+        if (facingRight == false)
+        {
+          tempWindCut = Instantiate(windCutPrefab, new Vector3(myTransform.position.x + 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
+        }
+        else if (facingRight == true)
+        {
+            tempWindCut = Instantiate(windCutPrefab, new Vector3(myTransform.position.x - 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
+        }
 
         yield return new WaitForSeconds(0.2f); 
         playerAnimator.SetBool("Attacking", false);
-       
+        Destroy(tempWindCut);
+
     }
+
 
     void captureEnemieObjectFireBall()
     {
         try
         {
-            if(Enemie == null)
+            if (Enemie == null)
             {
                 Enemie = GameObject.Find("Player").GetComponent<FireBallMagic>().Enemie;
             }
         }
-        catch(Exception e)
+        catch (Exception e)
         {
-           
+
         }
 
     }
+
 
 }
