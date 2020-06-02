@@ -14,7 +14,7 @@ public class TypeWriter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("mostrarTexto", escrevaFrase);
+        StartCoroutine("habilitarTexto");
     }
 
     IEnumerator mostrarTexto(string textType)
@@ -27,6 +27,12 @@ public class TypeWriter : MonoBehaviour
             yield return new WaitForSeconds(delayWriter); 
         }
         corroutineIsDone = true;
+    }
+
+    IEnumerator habilitarTexto()
+    {
+        yield return new WaitForSeconds(5f);
+        StartCoroutine("mostrarTexto", escrevaFrase);
     }
 
 }

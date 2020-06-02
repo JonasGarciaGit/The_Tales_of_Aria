@@ -57,14 +57,18 @@ public class TextureFade : MonoBehaviour
             c.a = f;
             rend.material.color = c;
             yield return new WaitForSeconds(0.2f);
-            canvas.gameObject.SetActive(true);
         }
+
+        yield return new WaitForSeconds(0.1f);
+        canvas.gameObject.SetActive(true);
     }
 
     IEnumerator LoadNextScene()
     {
         yield return new WaitForSeconds(5f);
         StartCoroutine("FadeIn");
+
+        yield return new WaitForSeconds(0.1f);
         canvas.gameObject.SetActive(false);
 
         yield return new WaitForSeconds(3f);
