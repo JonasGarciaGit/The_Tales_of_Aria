@@ -30,8 +30,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7542067971225099768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.68, y: -0.88, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 90.98, y: 2.89, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4c661153d91ec6442bcfccd020274b6e, type: 2}
+  - {fileID: 2100000, guid: 2899476cba193784f8899a7f8921babc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -212,10 +212,11 @@ MonoBehaviour:
   Nivel: {fileID: 0}
   AppleAmount: {fileID: 0}
   facingRight: 0
-  myTransform: {fileID: 7542067971225099760}
+  myTransform: {fileID: 0}
   jumpForce: 400
   isGround: 0
   Armas: {fileID: 0}
+  Enemie: {fileID: 0}
   WeaponDamage: 20
   enemieSpotCollide: 0
   uiInventory: {fileID: 0}
@@ -223,5 +224,10 @@ MonoBehaviour:
   activeInventory: 0
   fireBoolCooldown: 0
   enemieSpotName: 
-  windCutPrefabDir: {fileID: 0}
-  windCutPrefabEsq: {fileID: 0}
+  windCutPrefabDir: {fileID: 700181220397478706, guid: 556413bc838376a48b112018da0118ed,
+    type: 3}
+  windCutPrefabEsq: {fileID: 7199852297355231286, guid: 1ce831f2a947c1845806fdafd0a2285c,
+    type: 3}
+  effectLevelUp: {fileID: 100000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+  fxGame: {fileID: 0}
+  windCutAudio: {fileID: 8300000, guid: 4bdcef4cc1449324397dcf85d5957a31, type: 3}

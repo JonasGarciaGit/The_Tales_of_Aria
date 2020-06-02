@@ -23147,7 +23147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1936891160
 Transform:
   m_ObjectHideFlags: 0
@@ -26032,12 +26032,12 @@ PrefabInstance:
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.23
+      value: -2.54
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.65
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
@@ -26142,6 +26142,11 @@ PrefabInstance:
       propertyPath: effectLevelUp
       value: 
       objectReference: {fileID: 100000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: fxGame
+      value: 
+      objectReference: {fileID: 877684609}
     - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: fxGame

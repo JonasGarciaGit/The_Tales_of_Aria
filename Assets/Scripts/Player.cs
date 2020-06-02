@@ -49,6 +49,8 @@ public class Player : MonoBehaviour
 	public GameObject windCutPrefabDir;
     public GameObject windCutPrefabEsq;
     public GameObject effectLevelUp;
+    public AudioSource fxGame;
+    public AudioClip windCutAudio;
 
 
     private void Awake()
@@ -120,6 +122,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
+            fxGame.PlayOneShot(windCutAudio);
             StartCoroutine("playerSlashing", true);
         }
 
