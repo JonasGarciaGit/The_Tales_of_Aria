@@ -154,6 +154,7 @@ MonoBehaviour:
   delayWriter: 0.1
   escrevaFrase: "...... Onde eu estou? .....que lugar \xE9 esse?....hmmm som de passaros?.....eu
     podia jurar que estava em casa assistindo Boku no hero..."
+  corroutineIsDone: 0
 --- !u!4 &54410444
 Transform:
   m_ObjectHideFlags: 0
@@ -857,7 +858,7 @@ GameObject:
   - component: {fileID: 788223288}
   - component: {fileID: 788223290}
   m_Layer: 0
-  m_Name: FadeIn
+  m_Name: FadeOut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -940,6 +941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1447468426}
+  controllerWriter: {fileID: 54410442}
 --- !u!1 &844121916
 GameObject:
   m_ObjectHideFlags: 0

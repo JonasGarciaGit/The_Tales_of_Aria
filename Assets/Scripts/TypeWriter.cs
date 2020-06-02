@@ -9,6 +9,7 @@ public class TypeWriter : MonoBehaviour
     public Text textWriter;
     public float delayWriter = 0.1f;
     public string escrevaFrase;
+    public bool corroutineIsDone;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class TypeWriter : MonoBehaviour
 
             yield return new WaitForSeconds(delayWriter); 
         }
+        corroutineIsDone = true;
     }
 
 }

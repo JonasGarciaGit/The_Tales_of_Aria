@@ -19,6 +19,7 @@ TagManager:
   - BossScene
   - Coin
   - PlayerAttack
+  - FadeOut
   layers:
   - Default
   - TransparentFX
@@ -35,8 +36,8 @@ TagManager:
   - Enemie
   - EnemieDie
   - Coin
-  - Weapon 
-  - 
+  - Weapon
+  - FadeOut
   - 
   - 
   - 
