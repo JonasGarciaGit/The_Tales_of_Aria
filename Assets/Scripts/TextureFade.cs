@@ -5,6 +5,7 @@ using UnityEngine;
 public class TextureFade : MonoBehaviour
 {
 
+    public Canvas canvas;
     SpriteRenderer rend;
 
     // Start is called before the first frame update
@@ -18,17 +19,6 @@ public class TextureFade : MonoBehaviour
         StartCoroutine("fadeOut");
     }
 
-    IEnumerator FadeIn()
-    {
-        for(float f = 0.05f; f <= 1; f += 0.05f)
-        {
-            Color c = rend.material.color;
-            c.a = f;
-            rend.material.color = c;
-            yield return new WaitForSeconds(0.05f);
-        }
-    }
-
     IEnumerator fadeOut()
     {
         for(float f = 1f; f >= -0.5f; f -= 0.05f)
@@ -37,6 +27,7 @@ public class TextureFade : MonoBehaviour
             c.a = f;
             rend.material.color = c;
             yield return new WaitForSeconds(0.2f);
+            canvas.gameObject.SetActive(true);
         }
     }
 
