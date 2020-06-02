@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4296303877361482508}
   - component: {fileID: 7564435972701449089}
   - component: {fileID: 7564435972701449090}
-  m_Layer: 12
+  m_Layer: 13
   m_Name: MinotaurDie 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 2899476cba193784f8899a7f8921babc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
