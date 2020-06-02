@@ -1795,7 +1795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 696e0292327ad0640afa1f9a2276b42b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursorImg: {fileID: 0}
+  cursorImg: {fileID: 2800000, guid: a9ae0267b06e7b24d90f188a4370cce3, type: 3}
   offsetX: 3
   smooth: 0.1
   limitedUp: 2
@@ -3023,6 +3023,28 @@ PrefabInstance:
       propertyPath: InventoryCanvas
       value: 
       objectReference: {fileID: 746188729}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: windCutPrefabDir
+      value: 
+      objectReference: {fileID: 700181220397478706, guid: 556413bc838376a48b112018da0118ed,
+        type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: windCutPrefabEsq
+      value: 
+      objectReference: {fileID: 7199852297355231286, guid: 1ce831f2a947c1845806fdafd0a2285c,
+        type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: effectLevelUp
+      value: 
+      objectReference: {fileID: 100000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+    - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: fxGame
+      value: 
+      objectReference: {fileID: 730267518}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef4eca1f5d753b648955356f66ef8428, type: 3}
 --- !u!1 &875430115

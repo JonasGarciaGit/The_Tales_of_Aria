@@ -323,10 +323,12 @@ public class Player : MonoBehaviour
 
     void JumpPlayer()
     {
-
+        InventoryCanvas.SetActive(false);
+        activeInventory = false;
         jump = true;
         if (!maxJump)
         {
+            
             playerRigidBody.AddForce(new Vector2(0f, jumpForce));
             playerAnimator.SetBool("Jump", true);
             playerAnimator.SetBool("IsGrounded", false);
@@ -590,6 +592,5 @@ public class Player : MonoBehaviour
         }
 
     }
-
 
 }

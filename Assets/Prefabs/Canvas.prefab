@@ -2169,6 +2169,7 @@ MonoBehaviour:
   contador: 0
   podeInteragir: 0
   npc: {fileID: 0}
+  loadshop: {fileID: 0}
 --- !u!1 &6333209039936332771
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,7 +5527,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Z
+  m_Text: R
 --- !u!114 &6333209041058839709
 MonoBehaviour:
   m_ObjectHideFlags: 0
