@@ -1362,7 +1362,7 @@ GameObject:
   - component: {fileID: 101599453}
   - component: {fileID: 101599452}
   m_Layer: 0
-  m_Name: Slime2
+  m_Name: Slime
   m_TagString: Enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23147,7 +23147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1936891160
 Transform:
   m_ObjectHideFlags: 0

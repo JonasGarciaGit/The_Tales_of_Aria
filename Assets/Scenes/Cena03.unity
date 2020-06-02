@@ -9731,7 +9731,7 @@ GameObject:
   - component: {fileID: 194801896}
   - component: {fileID: 194801895}
   m_Layer: 0
-  m_Name: Minotaur3
+  m_Name: Minotaur
   m_TagString: Enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26227,7 +26227,7 @@ GameObject:
   - component: {fileID: 470798658}
   - component: {fileID: 470798657}
   m_Layer: 0
-  m_Name: Minotaur4
+  m_Name: Minotaur
   m_TagString: Enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101409,7 +101409,7 @@ GameObject:
   - component: {fileID: 1390140506}
   - component: {fileID: 1390140505}
   m_Layer: 0
-  m_Name: Slime2
+  m_Name: Slime
   m_TagString: Enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122728,7 +122728,7 @@ GameObject:
   - component: {fileID: 1646789265}
   - component: {fileID: 1646789264}
   m_Layer: 0
-  m_Name: Minotaur2
+  m_Name: Minotaur
   m_TagString: Enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155944,7 +155944,7 @@ GameObject:
   - component: {fileID: 2012188451}
   - component: {fileID: 2012188450}
   m_Layer: 0
-  m_Name: Minotaur5
+  m_Name: Minotaur
   m_TagString: Enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
