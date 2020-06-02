@@ -25875,6 +25875,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 488322708}
     m_Modifications:
+    - target: {fileID: 1440791339, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750165227, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6333209039432939878, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: m_IsActive
@@ -26022,6 +26030,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+--- !u!1 &6803954927631186551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1011570999, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 6803954927631186550}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7542067970326423416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26147,6 +26161,11 @@ PrefabInstance:
       propertyPath: fxGame
       value: 
       objectReference: {fileID: 877684609}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: menuInGame
+      value: 
+      objectReference: {fileID: 6803954927631186551}
     - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: fxGame

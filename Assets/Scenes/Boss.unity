@@ -2354,6 +2354,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1440791339, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750165227, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6333209039681453350, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -2667,6 +2675,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &746188735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1011570999, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 746188728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &757244690
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,6 +3054,11 @@ PrefabInstance:
       propertyPath: effectLevelUp
       value: 
       objectReference: {fileID: 100000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: menuInGame
+      value: 
+      objectReference: {fileID: 746188735}
     - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: fxGame
