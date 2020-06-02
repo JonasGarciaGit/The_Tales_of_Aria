@@ -51,6 +51,8 @@ public class Player : MonoBehaviour
     public GameObject effectLevelUp;
     public AudioSource fxGame;
     public AudioClip windCutAudio;
+    public GameObject menuInGame;
+    public bool activeMenuInGame;
 
 
     private void Awake()
@@ -71,7 +73,9 @@ public class Player : MonoBehaviour
         ActualLife = MaxLife;
         ActualMana = MaxMana;
         activeInventory = false;
+        activeMenuInGame = false;
         InventoryCanvas.SetActive(false);
+        menuInGame.SetActive(false);
         fireBoolCooldown = 0;
     }
 
@@ -189,6 +193,19 @@ public class Player : MonoBehaviour
             }
 
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(activeMenuInGame == false)
+            {
+                menuInGame.SetActive(true);
+                activeMenuInGame = true;
+            }
+            else{
+                menuInGame.SetActive(false);
+                activeMenuInGame = false;
+            }
         }
 
 
