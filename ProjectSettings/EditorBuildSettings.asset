@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu_The_Tales_Of_Aria.unity
+    guid: a7f11c6cb6086094496d6d3f405614c6
+  - enabled: 1
+    path: Assets/Scenes/Menu_Configuracao.unity
+    guid: c46946c69aebc69459040ebd01af7cde
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 41097c41febe8044fa78c30977dd8400
+  - enabled: 1
     path: Assets/Scenes/Cena_inicial.unity
     guid: 002d5e3b135f12d41a2ca5ac8be436f1
   - enabled: 1

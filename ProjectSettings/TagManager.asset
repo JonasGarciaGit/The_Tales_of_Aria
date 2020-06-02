@@ -20,6 +20,7 @@ TagManager:
   - Coin
   - PlayerAttack
   - FadeOut
+  - music
   layers:
   - Default
   - TransparentFX
