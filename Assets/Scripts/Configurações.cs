@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Configurações : MonoBehaviour
 {
@@ -20,16 +21,22 @@ public class Configurações : MonoBehaviour
 
     private void OnEnable()
     {
-        resolutions = Screen.resolutions;
-        foreach (Resolution resolution in resolutions)
+        try
         {
-            resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
-        }
+            resolutions = Screen.resolutions;
+            foreach (Resolution resolution in resolutions)
+            {
+                resolutionDropdown.options.Add(new Dropdown.OptionData(resolution.ToString()));
+            }
 
-        fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
-        resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
-        qualityTextureDropDown.onValueChanged.AddListener(delegate { OnTextureQualityChange(); });
-        musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
+            fullScreenToggle.onValueChanged.AddListener(delegate { OnFullScreenToggle(); });
+            resolutionDropdown.onValueChanged.AddListener(delegate { OnResolutionChange(); });
+            qualityTextureDropDown.onValueChanged.AddListener(delegate { OnTextureQualityChange(); });
+            musicVolumeSlider.onValueChanged.AddListener(delegate { OnMusicVolumeChange(); });
+        }catch(Exception e)
+        {
+
+        }
     }
 
     void Start()

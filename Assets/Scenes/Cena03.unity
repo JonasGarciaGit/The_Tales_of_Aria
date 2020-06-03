@@ -323,7 +323,8 @@ AudioSource:
   m_GameObject: {fileID: 11557187}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 456105ff8b5c1fb4dac0d8b1d6e88ac6,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c03498ee0a5053144acf191b3cfd5b1d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.35
@@ -17158,9 +17159,53 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1440791339, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440791339, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1750165227, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750165227, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_MinValue
+      value: -40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_MaxValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 298872331}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6333209040721754331, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
@@ -17327,6 +17372,57 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 298872323}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &298872329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6333209040721754335, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 298872323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &298872330 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1898893958, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 298872323}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &298872331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298872329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9333e2440ad91f44f919d512f9bd9dee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controleSom: {fileID: 24100000, guid: 456105ff8b5c1fb4dac0d8b1d6e88ac6, type: 2}
+--- !u!114 &298872332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298872329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd91d032e33f9046afa0d5bc460b85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFullscreen: 0
+  resolutionIndex: 0
+  qualityTexture: 0
+  musicVolume: 0
+  fullScreenToggle: {fileID: 0}
+  resolutionDropdown: {fileID: 0}
+  qualityTextureDropDown: {fileID: 0}
+  musicVolumeSlider: {fileID: 298872330}
 --- !u!1 &299146109
 GameObject:
   m_ObjectHideFlags: 0
@@ -163850,6 +163946,18 @@ PrefabInstance:
       propertyPath: menuInGame
       value: 
       objectReference: {fileID: 1011570999}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: HealingEffect
+      value: 
+      objectReference: {fileID: 7652723536141212640, guid: f465d38999db4b54b839afce7963377f,
+        type: 3}
+    - target: {fileID: 7542067971225099769, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: ManaEffect
+      value: 
+      objectReference: {fileID: 7652723536141212640, guid: 57e45916011898647ae530c491aaf332,
+        type: 3}
     - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: fxGame
