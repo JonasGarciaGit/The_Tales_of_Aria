@@ -9,11 +9,13 @@ public class ItemWorld : MonoBehaviour
     private Item item;
     private SpriteRenderer spriteRenderer;
     private TextMeshPro textMeshPro;
+    private static Player player;
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         textMeshPro = transform.Find("Text").GetComponent<TextMeshPro>();
+
     }
 
     public static ItemWorld SpawnItemWorld(Vector3 position, Item item)
@@ -27,8 +29,18 @@ public class ItemWorld : MonoBehaviour
 
     public static ItemWorld DropItem(Vector3 dropPosition, Item item)
     {
+        player = GameObject.Find("Player").GetComponent<Player>();
+        
         Vector3 randomDir;
-        randomDir.x = 3;
+        if (player.facingRight == false)
+        {
+            randomDir.x = 3;
+        }
+        else
+        {
+            randomDir.x = -3;
+        }
+
         randomDir.y = 0;
         randomDir.z = 0;
         ItemWorld itemWorld = SpawnItemWorld(dropPosition + randomDir, item);
