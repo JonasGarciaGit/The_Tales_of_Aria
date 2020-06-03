@@ -53,6 +53,8 @@ public class Player : MonoBehaviour
     public AudioClip windCutAudio;
     public GameObject menuInGame;
     public bool activeMenuInGame;
+    public GameObject HealingEffect;
+    public GameObject ManaEffect;
 
 
     private void Awake()
@@ -404,6 +406,9 @@ public class Player : MonoBehaviour
         {
             ActualLife = ActualLife + 20;
         }
+        GameObject healingEffect = Instantiate(HealingEffect,myTransform.position,Quaternion.identity);
+        healingEffect.transform.parent = myTransform;
+        Destroy(healingEffect,3.0f);
     }
 
     void HealthWithPotion()
@@ -416,6 +421,9 @@ public class Player : MonoBehaviour
         {
             ActualLife = ActualLife + 50;
         }
+        GameObject healingEffect = Instantiate(HealingEffect, myTransform.position, Quaternion.identity);
+        healingEffect.transform.parent = myTransform;
+        Destroy(healingEffect, 3.0f);
     }
 
     void RecoveryMP()
@@ -428,6 +436,9 @@ public class Player : MonoBehaviour
         {
             ActualMana = ActualMana + 50;
         }
+        GameObject manaEffect = Instantiate(ManaEffect, myTransform.position, Quaternion.identity);
+        manaEffect.transform.parent = myTransform;
+        Destroy(manaEffect, 3.0f);
     }
 
     void inputShiftCorrer()
