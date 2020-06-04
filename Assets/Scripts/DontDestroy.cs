@@ -68,6 +68,7 @@ public class DontDestroy: MonoBehaviour
     }
     IEnumerator FadeIn()
     {
+        canvas.SetActive(false);
         for (float f = 0.05f; f <= 1; f += 0.05f)
         {
             Color c = rend.material.color;
@@ -75,8 +76,6 @@ public class DontDestroy: MonoBehaviour
             rend.material.color = c;
             yield return new WaitForSeconds(0.05f);
         }
-
-        canvas.SetActive(false);
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene(sceneName);
     }

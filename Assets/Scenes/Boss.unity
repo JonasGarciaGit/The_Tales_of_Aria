@@ -3162,7 +3162,7 @@ PrefabInstance:
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.1474967
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
@@ -6640,11 +6640,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1865463311}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa0afd26626b8742a74f3ef108cdc2e, type: 3}
+  m_Script: {fileID: 11500000, guid: ed5b2e80b02f67245a350ed32aa16541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Jogador: {fileID: 0}
-  CenaACareggar: Cena03
+  sceneName: Cena03
+  rend: {fileID: 1842622342}
+  canvas: {fileID: 746188736}
 --- !u!61 &1865463314
 BoxCollider2D:
   m_ObjectHideFlags: 0
