@@ -55,6 +55,9 @@ public class Player : MonoBehaviour
     public bool activeMenuInGame;
     public GameObject HealingEffect;
     public GameObject ManaEffect;
+    public bool canUseMagic;
+    public Image fireMagicImage;
+    public Image windMagicImage;
 
 
     private void Awake()
@@ -79,6 +82,8 @@ public class Player : MonoBehaviour
         InventoryCanvas.SetActive(false);
         menuInGame.SetActive(false);
         fireBoolCooldown = 0;
+        canUseMagic = false;
+        
     }
 
     private void UseItem(Item item)
@@ -126,7 +131,7 @@ public class Player : MonoBehaviour
         {
             mana.rectTransform.sizeDelta = new Vector2(ActualMana / MaxMana * 182, 11.43732f);
         }
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && canUseMagic == true)
         {
             fxGame.PlayOneShot(windCutAudio);
             StartCoroutine("playerSlashing", true);
@@ -144,7 +149,7 @@ public class Player : MonoBehaviour
             Correr(IsRunning);
             speed = 2;
         }
-        if (Input.GetKeyDown(KeyCode.F) && playerAnimator.GetBool("IsGrounded") == true && fireBoolCooldown == 0)
+        if (Input.GetKeyDown(KeyCode.F) && playerAnimator.GetBool("IsGrounded") == true && fireBoolCooldown == 0 && canUseMagic == true)
         {
             try
             {
@@ -210,6 +215,27 @@ public class Player : MonoBehaviour
             }
         }
 
+        try
+        {
+            fireMagicImage = GameObject.Find("MagiaFogo").GetComponent<Image>();
+            windMagicImage = GameObject.Find("MagiaVento").GetComponent<Image>();
+
+            if (canUseMagic == false)
+            {
+                fireMagicImage.color = new Color32(255, 255, 255, 60);     
+                windMagicImage.color = new Color32(0, 255, 0, 60);
+            }
+            else
+            {
+                fireMagicImage.color = new Color32(255, 255, 255, 255);
+                windMagicImage.color = new Color32(0, 255, 0, 255);
+            }
+
+        }
+        catch(Exception e)
+        {
+            
+        }
 
         inputShiftCorrer();
         Experience();
@@ -267,6 +293,10 @@ public class Player : MonoBehaviour
             if (collision.transform.tag == "plataformaMovel")
             {
                 myTransform.parent = collision.transform;
+            }
+            if(collision.gameObject.tag == "Anel")
+            {
+                canUseMagic = true;
             }
 
             if (collision.gameObject.tag == "Enemie")

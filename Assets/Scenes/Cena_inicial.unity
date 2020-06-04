@@ -4291,6 +4291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Vilareijo
+  rend: {fileID: 1936891162}
+  canvas: {fileID: 6333209039701921556}
 --- !u!1 &326587256
 GameObject:
   m_ObjectHideFlags: 0
@@ -15634,7 +15636,12 @@ PrefabInstance:
     - target: {fileID: 3924237882713706499, guid: 2a31092faf062b24f8b5396c248d8a55,
         type: 3}
       propertyPath: m_TagString
-      value: Npc
+      value: NpcVelho
+      objectReference: {fileID: 0}
+    - target: {fileID: 3924237882713706499, guid: 2a31092faf062b24f8b5396c248d8a55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3924237882713706502, guid: 2a31092faf062b24f8b5396c248d8a55,
         type: 3}
@@ -15713,11 +15720,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nomeDoNpc: ???
   frases:
-  - Oi
-  - Teste
+  - "Oh...Ola senhorita, esta perdida? Uma pessoa em s\xE3 consci\xEAncia n\xE3o
+    deveria entrar nessa floresta"
+  - Me diga, qual o seu nome?
+  - "Aria...voc\xEA tem um belo nome,seu nome significa \"ela \xE9 essencial\", talvez
+    os Deuses tenham te enviado, as coisas por aqui j\xE1 n\xE3o s\xE3o mais as mesmas
+    quem sabe voc\xEA n\xE3o \xE9 a pessoa escolhida para cuidar disso haha, quem
+    sabe..."
+  - "Aqui pegue este anel, costumava ser da minha filha mas h\xE1 muito tempo n\xE3o
+    tenho noticias dela, ele ter\xE1 mais utilidade para voc\xEA."
+  - Ate logo Aria, espero te ver novamente.
   npc: {fileID: 1167687562}
   Dialogo: {fileID: 6333209040930049346}
   font: {fileID: 12800000, guid: fdbe3a44a6201ed418142d2c402c32bb, type: 3}
+  item: {fileID: 4669327965658445170, guid: c94f22a9a52896740a8ec1acfef24932, type: 3}
 --- !u!61 &1167687564
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27148,7 +27164,7 @@ PrefabInstance:
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.54
+      value: 33.58
       objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
@@ -29146,7 +29162,7 @@ GameObject:
   - component: {fileID: 6333209039854156252}
   - component: {fileID: 6333209039854156255}
   m_Layer: 5
-  m_Name: slot3 (1)
+  m_Name: slotVento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30203,7 +30219,7 @@ GameObject:
   - component: {fileID: 6333209040218422040}
   - component: {fileID: 6333209040218422043}
   m_Layer: 5
-  m_Name: item3
+  m_Name: MagiaFogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30669,13 +30685,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4dc051a0301cecb4aa1a85036ace2a58, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30707,7 +30723,7 @@ GameObject:
   - component: {fileID: 6333209040385335441}
   - component: {fileID: 6333209040385335440}
   m_Layer: 5
-  m_Name: item3
+  m_Name: MagiaVento
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30723,7 +30739,7 @@ RectTransform:
   m_GameObject: {fileID: 6333209040385335442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6333209039854156254}
   m_RootOrder: 0
@@ -32249,7 +32265,7 @@ GameObject:
   - component: {fileID: 6333209040902619201}
   - component: {fileID: 6333209040902619200}
   m_Layer: 5
-  m_Name: slot3
+  m_Name: slotFogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32332,6 +32348,7 @@ MonoBehaviour:
   podeInteragir: 0
   npc: {fileID: 0}
   loadshop: {fileID: 6333209039701921557}
+  item: {fileID: 0}
 --- !u!114 &6333209040930049211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33256,7 +33273,7 @@ GameObject:
   - component: {fileID: 6333209041158178347}
   - component: {fileID: 6333209041158178346}
   m_Layer: 5
-  m_Name: slot4
+  m_Name: mochila
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33962,6 +33979,31 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2638512484406404172, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512484406404173, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Name
+      value: MagiaVento
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512484406404175, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512484406404175, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512484406404175, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2638512484868372733, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}
       propertyPath: m_IsActive
@@ -33972,10 +34014,25 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2638512485057217693, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Name
+      value: slotFogo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512485057217695, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2638512485313364723, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512485313364723, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Name
+      value: mochila
       objectReference: {fileID: 0}
     - target: {fileID: 2638512485735730123, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}
@@ -34087,15 +34144,65 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2638512486021823744, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486021823744, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486021823744, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486021823744, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2638512486021823806, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2638512486021823806, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Name
+      value: slotVento
+      objectReference: {fileID: 0}
     - target: {fileID: 2638512486159319534, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486253150146, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Name
+      value: MagiaFogo
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486253150146, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486253150148, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486253150149, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512486267913041, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: openInventory
       objectReference: {fileID: 0}
     - target: {fileID: 8320951378869848127, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}

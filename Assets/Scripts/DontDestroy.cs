@@ -16,6 +16,7 @@ public class DontDestroy: MonoBehaviour
     private List<Item> itemList;
     public SpriteRenderer rend;
     public GameObject canvas;
+    private bool canUseMagic;
 
 
     void Start()
@@ -36,8 +37,9 @@ public class DontDestroy: MonoBehaviour
             GameObject.Find("Player").GetComponent<Player>().ActualMana = ActualMana;
             GameObject.Find("Player").GetComponent<Player>().ActualExp = ActualExp;
             GameObject.Find("Player").GetComponent<Player>().Nivel.text = Nivel;
+            GameObject.Find("Player").GetComponent<Player>().canUseMagic = canUseMagic;
             //GameObject.Find("Player").GetComponent<Player>().inventory.SetItemList(itemList);
-            foreach(Item item in itemList)
+            foreach (Item item in itemList)
             {
                 GameObject.Find("Player").GetComponent<Player>().inventory.AddItem(new Item { itemType = item.itemType, amount = item.amount});
             }
@@ -54,6 +56,7 @@ public class DontDestroy: MonoBehaviour
         ActualExp = GameObject.Find("Player").GetComponent<Player>().ActualExp;
         Nivel = GameObject.Find("Player").GetComponent<Player>().Nivel.text;
         itemList = GameObject.Find("Player").GetComponent<Player>().inventory.GetItemList();
+        canUseMagic = GameObject.Find("Player").GetComponent<Player>().canUseMagic;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -21,6 +21,9 @@ TagManager:
   - PlayerAttack
   - FadeOut
   - music
+  - NpcVelho
+  - FxTemporaire
+  - Anel
   layers:
   - Default
   - TransparentFX

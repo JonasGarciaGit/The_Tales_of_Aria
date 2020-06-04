@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Conversa : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Conversa : MonoBehaviour
     public GameObject npc;
     public GameObject Dialogo;
     public Font font;
+    public GameObject item;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,17 +28,24 @@ public class Conversa : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if (collision.gameObject.tag == "Player")
+        try
         {
-            Dialogo.GetComponent<Dialogo>().podeInteragir = true;
-            Dialogo.GetComponent<Dialogo>().nomeDoNpc = nomeDoNpc;
-            Dialogo.GetComponent<Dialogo>().npc = npc;
-            Dialogo.GetComponent<Dialogo>().frases = new string[frases.Length];
-            for (int i=0; i < frases.Length; i++)
+            if (collision.gameObject.tag == "Player")
             {
-                Dialogo.GetComponent<Dialogo>().frases[i] = frases[i];
+                Dialogo.GetComponent<Dialogo>().podeInteragir = true;
+                Dialogo.GetComponent<Dialogo>().nomeDoNpc = nomeDoNpc;
+                Dialogo.GetComponent<Dialogo>().npc = npc;
+                Dialogo.GetComponent<Dialogo>().frases = new string[frases.Length];
+                Dialogo.GetComponent<Dialogo>().item = item;
+                for (int i = 0; i < frases.Length; i++)
+                {
+                    Dialogo.GetComponent<Dialogo>().frases[i] = frases[i];
+                }
             }
+        }
+        catch (Exception e)
+        {
+
         }
     }
 

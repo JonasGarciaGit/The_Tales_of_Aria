@@ -755,6 +755,7 @@ MonoBehaviour:
   npc: {fileID: 73332820}
   Dialogo: {fileID: 1982221659}
   font: {fileID: 12800000, guid: fdbe3a44a6201ed418142d2c402c32bb, type: 3}
+  item: {fileID: 0}
 --- !u!95 &73332823
 Animator:
   serializedVersion: 3
@@ -5996,6 +5997,7 @@ MonoBehaviour:
   npc: {fileID: 865414833}
   Dialogo: {fileID: 1982221659}
   font: {fileID: 12800000, guid: fdbe3a44a6201ed418142d2c402c32bb, type: 3}
+  item: {fileID: 0}
 --- !u!1 &868617058
 GameObject:
   m_ObjectHideFlags: 0
@@ -9793,6 +9795,32 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6333209039359383384, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039359383385, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_Name
+      value: MagiaVento
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039359383387, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dc051a0301cecb4aa1a85036ace2a58,
+        type: 3}
+    - target: {fileID: 6333209039359383387, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039359383387, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6333209039905192817, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: loadshop
@@ -9807,6 +9835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: openInventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209041278864598, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_Name
+      value: MagiaFogo
       objectReference: {fileID: 0}
     - target: {fileID: 6803954926859271341, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
@@ -10378,6 +10411,7 @@ MonoBehaviour:
   npc: {fileID: 1626983910}
   Dialogo: {fileID: 1982221659}
   font: {fileID: 12800000, guid: fdbe3a44a6201ed418142d2c402c32bb, type: 3}
+  item: {fileID: 0}
 --- !u!1 &1630740621
 GameObject:
   m_ObjectHideFlags: 0
