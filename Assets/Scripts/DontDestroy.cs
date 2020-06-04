@@ -14,11 +14,17 @@ public class DontDestroy: MonoBehaviour
     private float ActualExp;
     private string Nivel;
     private List<Item> itemList;
+    public SpriteRenderer rend;
+    public GameObject canvas;
 
 
     void Start()
     {
         ActualSceneName = Application.loadedLevelName;
+        rend = rend.GetComponent<SpriteRenderer>();
+        Color c = rend.material.color;
+        c.a = 0f;
+        rend.material.color = c;
     }
 
     
@@ -57,7 +63,27 @@ public class DontDestroy: MonoBehaviour
             guardarValores();
             DontDestroyOnLoad(gameObject);
             //DontDestroyOnLoad(MyUI);
-            SceneManager.LoadScene(sceneName);
+            trocarCena();
         }
+    }
+    IEnumerator FadeIn()
+    {
+        for (float f = 0.05f; f <= 1; f += 0.05f)
+        {
+            Color c = rend.material.color;
+            c.a = f;
+            rend.material.color = c;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        canvas.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(sceneName);
+    }
+
+
+    void trocarCena()
+    {
+        StartCoroutine("FadeIn");    
     }
 }

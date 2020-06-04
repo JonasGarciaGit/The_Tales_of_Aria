@@ -16,6 +16,14 @@ public class OpenDoorAndShowUpCredits : MonoBehaviour
        
     }
 
+    private void Update()
+    {
+        if (!boss.activeSelf)
+        {
+            GetComponent<BoxCollider2D>().isTrigger = true;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player" && !boss.activeSelf)
@@ -28,9 +36,7 @@ public class OpenDoorAndShowUpCredits : MonoBehaviour
     {
         darkAura.SetActive(false);
         yield return new WaitForSeconds(0.5f);
-        door.GetComponent<Animator>().SetBool("Opening", true);
-        door.AddComponent<DontDestroy>().sceneName = "Creditos";
-        
+        door.GetComponent<Animator>().SetBool("Opening", true);        
     }
 
 }
