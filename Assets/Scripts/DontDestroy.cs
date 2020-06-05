@@ -71,7 +71,7 @@ public class DontDestroy: MonoBehaviour
     }
     IEnumerator FadeIn()
     {
-        canvas.SetActive(false);
+       // canvas.SetActive(false);
         for (float f = 0.05f; f <= 1; f += 0.05f)
         {
             Color c = rend.material.color;
