@@ -37,10 +37,13 @@ public class Conversa : MonoBehaviour
                 Dialogo.GetComponent<Dialogo>().npc = npc;
                 Dialogo.GetComponent<Dialogo>().frases = new string[frases.Length];
                 Dialogo.GetComponent<Dialogo>().item = item;
-                for (int i = 0; i < frases.Length; i++)
-                {
-                    Dialogo.GetComponent<Dialogo>().frases[i] = frases[i];
-                }
+
+                    for (int i = 0; i < frases.Length; i++)
+                    {
+                        Dialogo.GetComponent<Dialogo>().frases[i] = frases[i];
+                    }
+
+
             }
         }
         catch (Exception e)

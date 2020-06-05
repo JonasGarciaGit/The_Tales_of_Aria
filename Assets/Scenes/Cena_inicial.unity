@@ -4293,6 +4293,7 @@ MonoBehaviour:
   sceneName: Vilareijo
   rend: {fileID: 1936891162}
   canvas: {fileID: 6333209039701921556}
+  controlDialog: 0
 --- !u!1 &326587256
 GameObject:
   m_ObjectHideFlags: 0
@@ -32349,6 +32350,7 @@ MonoBehaviour:
   npc: {fileID: 0}
   loadshop: {fileID: 6333209039701921557}
   item: {fileID: 0}
+  controlDialog: {fileID: 322810173}
 --- !u!114 &6333209040930049211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34005,6 +34007,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2638512484868372733, guid: 29ec1c61e954da748aee7e18fedcd78e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2638512484950100381, guid: 29ec1c61e954da748aee7e18fedcd78e,
         type: 3}
       propertyPath: m_IsActive
       value: 0

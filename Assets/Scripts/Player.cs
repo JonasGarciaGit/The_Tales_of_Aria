@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
     public bool canUseMagic;
     public Image fireMagicImage;
     public Image windMagicImage;
+   
 
 
     private void Awake()
@@ -361,7 +362,10 @@ public class Player : MonoBehaviour
             inventory.AddItem(new Item {itemType = Item.ItemType.Coin, amount = collision.gameObject.GetComponent<AmountCoinsDrop>().amountCoins});
             Destroy(collision.gameObject);
         }
-
+        if(canUseMagic == true && collision.gameObject.tag == "NpcVelho")
+        {
+            Destroy(collision.gameObject.GetComponent<Conversa>());
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)

@@ -8790,6 +8790,7 @@ MonoBehaviour:
   sceneName: Cena_inicial
   rend: {fileID: 804566152}
   canvas: {fileID: 1608691457}
+  controlDialog: 0
 --- !u!1 &1417574373
 GameObject:
   m_ObjectHideFlags: 0
@@ -9826,6 +9827,11 @@ PrefabInstance:
       propertyPath: loadshop
       value: 
       objectReference: {fileID: 1492623811}
+    - target: {fileID: 6333209039905192817, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: controlDialog
+      value: 
+      objectReference: {fileID: 1408202935}
     - target: {fileID: 6333209041256034373, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11223,6 +11229,7 @@ MonoBehaviour:
   sceneName: Cena03
   rend: {fileID: 804566152}
   canvas: {fileID: 1608691457}
+  controlDialog: 0
 --- !u!1 &1732929774
 GameObject:
   m_ObjectHideFlags: 0

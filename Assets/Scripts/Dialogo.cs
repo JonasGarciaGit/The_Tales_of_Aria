@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Dialogo : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Dialogo : MonoBehaviour
     public LoadShop loadshop;
     private Player player;
     public GameObject item;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,8 @@ public class Dialogo : MonoBehaviour
         frase.text = frases[contador];
         caixaDialogo.SetActive(false);
         player = GameObject.Find("Player").GetComponent<Player>();
+
+
     }
 
     // Update is called once per frame
@@ -63,8 +67,9 @@ public class Dialogo : MonoBehaviour
             }
             if(npc.gameObject.tag == "NpcVelho")
             {
-                GameObject anel = Instantiate(item, new Vector2(npc.transform.position.x,npc.transform.position.y + 1), Quaternion.identity);
-                anel.GetComponent<Rigidbody2D>().AddForce(new Vector2(2,5), ForceMode2D.Impulse);
+                GameObject anel = Instantiate(item, new Vector2(npc.transform.position.x, npc.transform.position.y + 1), Quaternion.identity);
+                anel.GetComponent<Rigidbody2D>().AddForce(new Vector2(2, 5), ForceMode2D.Impulse);
+                Destroy(GameObject.Find("NpcVelhoIdle").GetComponent<Conversa>());
             }
             contador = 0;
             caixaDialogo.SetActive(false);
