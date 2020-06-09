@@ -7658,7 +7658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursorImg: {fileID: 2800000, guid: a9ae0267b06e7b24d90f188a4370cce3, type: 3}
-  offsetX: 3
+  offsetX: 0
   smooth: 0.1
   limitedUp: 2
   limitedDown: -0.5
@@ -8790,7 +8790,7 @@ MonoBehaviour:
   sceneName: Cena_inicial
   rend: {fileID: 804566152}
   canvas: {fileID: 1608691457}
-  controlDialog: 0
+  font: {fileID: 12800000, guid: fdbe3a44a6201ed418142d2c402c32bb, type: 3}
 --- !u!1 &1417574373
 GameObject:
   m_ObjectHideFlags: 0
@@ -9592,12 +9592,12 @@ PrefabInstance:
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.7414103
+      value: -5.66
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.4145231
+      value: -2.46
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
@@ -9723,6 +9723,11 @@ PrefabInstance:
       propertyPath: fxGame
       value: 
       objectReference: {fileID: 452604076}
+    - target: {fileID: 7542067971225099771, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef4eca1f5d753b648955356f66ef8428, type: 3}
 --- !u!114 &1593430293 stripped
@@ -9822,6 +9827,26 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6333209039432939873, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 321.78995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039432939873, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19.733994
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039781099400, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 323.26996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039781099400, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19.830994
+      objectReference: {fileID: 0}
     - target: {fileID: 6333209039905192817, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: loadshop
@@ -9832,6 +9857,31 @@ PrefabInstance:
       propertyPath: controlDialog
       value: 
       objectReference: {fileID: 1408202935}
+    - target: {fileID: 6333209039961721832, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 322.06995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209039961721832, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 44.309998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209040071193062, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 373.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209040980954645, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 271.06995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6333209040980954645, guid: 350916a4a0c144741b9b55cb43dfe5c0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 19.830002
+      objectReference: {fileID: 0}
     - target: {fileID: 6333209041256034373, guid: 350916a4a0c144741b9b55cb43dfe5c0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11229,7 +11279,7 @@ MonoBehaviour:
   sceneName: Cena03
   rend: {fileID: 804566152}
   canvas: {fileID: 1608691457}
-  controlDialog: 0
+  font: {fileID: 12800000, guid: fdbe3a44a6201ed418142d2c402c32bb, type: 3}
 --- !u!1 &1732929774
 GameObject:
   m_ObjectHideFlags: 0

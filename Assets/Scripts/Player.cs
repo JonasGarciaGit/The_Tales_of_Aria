@@ -9,9 +9,9 @@ public class Player : MonoBehaviour
 {
 
     private Rigidbody2D playerRigidBody;
-    private Animator playerAnimator;
+    public Animator playerAnimator;
     public float speed = 2;
-    private float horizontal;
+    public float horizontal;
     public Image life;
     public Image mana;
     public float ActualMana;

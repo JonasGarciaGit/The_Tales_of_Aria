@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class DontDestroy: MonoBehaviour
 {
@@ -17,7 +18,9 @@ public class DontDestroy: MonoBehaviour
     public SpriteRenderer rend;
     public GameObject canvas;
     private bool canUseMagic;
-
+    private bool canEnter;
+    private string isPlayer;
+    public Font font;
 
     void Start()
     {
@@ -26,6 +29,7 @@ public class DontDestroy: MonoBehaviour
         Color c = rend.material.color;
         c.a = 0f;
         rend.material.color = c;
+        canEnter = false;
     }
 
     
@@ -47,6 +51,19 @@ public class DontDestroy: MonoBehaviour
             Destroy(gameObject);
              
         }
+        try
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                goToNextLevel();
+            }
+            
+        }
+        catch(Exception e)
+        {
+
+        }
+        
     }
 
     void guardarValores()
@@ -59,16 +76,47 @@ public class DontDestroy: MonoBehaviour
         canUseMagic = GameObject.Find("Player").GetComponent<Player>().canUseMagic;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void goToNextLevel()
     {
-        if(collision.gameObject.tag == "Player" && ActualSceneName == Application.loadedLevelName)
+        if (isPlayer == "Player" && ActualSceneName == Application.loadedLevelName && canEnter == true)
         {
             guardarValores();
             DontDestroyOnLoad(gameObject);
             //DontDestroyOnLoad(MyUI);
             trocarCena();
+
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        canEnter = true;
+        isPlayer = collision.gameObject.tag;
+        if(collision.gameObject.tag == "Player")
+        {
+            collision.gameObject.GetComponent<SalvarPos>().SalvarLocalizacao();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isPlayer = null;
+        canEnter = false;
+    }
+
+    private void OnGUI()
+    {
+        if (canEnter == true)
+        {
+            GUIStyle style = new GUIStyle();
+            style.alignment = TextAnchor.MiddleCenter;
+            GUI.skin.label.fontSize = 10;
+            GUI.skin.font = font;
+            GUI.color = Color.yellow;
+            GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 + 50, 200, 30), "Pressione 'E' para prosseguir");
+        }
+    }
+
     IEnumerator FadeIn()
     {
        // canvas.SetActive(false);
