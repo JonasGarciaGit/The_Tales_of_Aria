@@ -9752,7 +9752,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 194801894}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -9775,7 +9775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 194801894}
   spotPosition: {fileID: 1442467459}
   enemieAnimator: {fileID: 0}
@@ -26423,7 +26423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 470798656}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -26446,7 +26446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 470798656}
   spotPosition: {fileID: 1412049656}
   enemieAnimator: {fileID: 0}
@@ -78356,7 +78356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 1055331076}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -78379,7 +78379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 1055331076}
   spotPosition: {fileID: 1830575840}
   enemieAnimator: {fileID: 0}
@@ -81727,7 +81727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 1210819164}
   spotPosition: {fileID: 499049649}
   enemieAnimator: {fileID: 0}
@@ -81767,7 +81767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 1210819164}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -94938,7 +94938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1772809938}
   impulse: 1
-  playerTransform: {fileID: 0}
+  playerTransform: {fileID: 718570848}
 --- !u!114 &1319401665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101852,7 +101852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 1390140504}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -101875,7 +101875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 1390140504}
   spotPosition: {fileID: 1701798648}
   enemieAnimator: {fileID: 0}
@@ -123174,7 +123174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 1646789263}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -123197,7 +123197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 1646789263}
   spotPosition: {fileID: 1679375041}
   enemieAnimator: {fileID: 0}
@@ -156477,7 +156477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemieLife: 0
   enemieMaxLife: 20
-  Player: {fileID: 0}
+  Player: {fileID: 1772809938}
   Enemie: {fileID: 2012188449}
   ExpEnemie: 50
   EnemieAlive: 1
@@ -156500,7 +156500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770da5768904e3a4eb6443c1fdddd6ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1772809938}
   enemieObject: {fileID: 2012188449}
   spotPosition: {fileID: 733158668}
   enemieAnimator: {fileID: 0}

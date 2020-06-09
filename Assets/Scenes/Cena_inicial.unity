@@ -13415,12 +13415,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3257885337853343072}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &999389832 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
-    type: 3}
-  m_PrefabInstance: {fileID: 3257885337853343072}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1010383778
 GameObject:
   m_ObjectHideFlags: 0
@@ -24289,7 +24283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1936891160
 Transform:
   m_ObjectHideFlags: 0
@@ -27182,7 +27176,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerPosition
       value: 
-      objectReference: {fileID: 999389832}
+      objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_LocalPosition.x
