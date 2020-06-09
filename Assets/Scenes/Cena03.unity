@@ -81694,7 +81694,7 @@ GameObject:
   - component: {fileID: 1210819170}
   - component: {fileID: 1210819166}
   - component: {fileID: 1210819168}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Slime
   m_TagString: Enemie
   m_Icon: {fileID: 0}
@@ -129756,7 +129756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1712358027
 SpriteRenderer:
   m_ObjectHideFlags: 0

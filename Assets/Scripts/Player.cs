@@ -343,6 +343,7 @@ public class Player : MonoBehaviour
         if (collision.transform.tag == "OutOfZone" && enemieSpotCollide == true)
         {
             enemieSpotCollide = false;
+            Enemie = null;
         }
         if (collision.transform.tag == "EnemieSpot" && enemieSpotCollide == false)
         {
