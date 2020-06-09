@@ -29,7 +29,7 @@ public class Dialogo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nome.text = nomeDoNpc;
+        //nome.text = nomeDoNpc;
         frase.text = frases[contador];
         caixaDialogo.SetActive(false);
         player = GameObject.Find("Player").GetComponent<Player>();
@@ -44,6 +44,14 @@ public class Dialogo : MonoBehaviour
         {
             caixaDialogo.SetActive(true);
         }
+        try
+        {
+            nome.text = nomeDoNpc;
+        }catch(Exception e)
+        {
+
+        }
+        
     }
     private void FixedUpdate()
     {
