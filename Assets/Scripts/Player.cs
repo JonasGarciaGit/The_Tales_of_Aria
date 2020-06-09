@@ -118,7 +118,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-        captureEnemieObjectFireBall();
+        //captureEnemieObjectFireBall();
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -159,7 +159,7 @@ public class Player : MonoBehaviour
                 StartCoroutine("ConjuringFireballAnimationControl", true);
                 if (Enemie != null)
                 {
-                    if (this.gameObject.GetComponent<FireBallMagic>().Enemie.name == Enemie.name)
+                    if (this.gameObject.GetComponent<FireBallMagic>().Enemie.name == this.Enemie.name)
                     {
 
                         Enemie = Enemie;
@@ -173,7 +173,8 @@ public class Player : MonoBehaviour
                 else
                 {
                     Enemie = this.gameObject.GetComponent<FireBallMagic>().Enemie;
-                } 
+                }
+                Experience();
             }
             catch (Exception e)
             {
@@ -517,7 +518,7 @@ public class Player : MonoBehaviour
                     ActualExp = ActualExp + Enemie.GetComponent<EnemieDeath>().ExpEnemie;
                     Enemie = null;
                     this.gameObject.GetComponent<FireBallMagic>().fireball.GetComponent<DestroyObject>().destroy = true;
-                    this.gameObject.GetComponent<FireBallMagic>().Enemie = null;
+                    GameObject.Find("Player").GetComponent<FireBallMagic>().Enemie = null;
                 }
             }
 
@@ -630,6 +631,7 @@ public class Player : MonoBehaviour
         if (facingRight == false)
         {
           tempWindCut = Instantiate(windCutPrefabDir, new Vector3(myTransform.position.x + 1f, myTransform.position.y + 0.3f, myTransform.position.z), myTransform.localRotation);
+          
         }
         else if (facingRight == true)
         {
@@ -642,21 +644,5 @@ public class Player : MonoBehaviour
 
     }
 
-
-    void captureEnemieObjectFireBall()
-    {
-        try
-        {
-            if (Enemie == null)
-            {
-                Enemie = GameObject.Find("Player").GetComponent<FireBallMagic>().Enemie;
-            }
-        }
-        catch (Exception e)
-        {
-
-        }
-
-    }
 
 }

@@ -1363,7 +1363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 40
+  enemieMaxLife: 100
   Player: {fileID: 999389824}
   Enemie: {fileID: 101599451}
   ExpEnemie: 200
@@ -2447,7 +2447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 40
+  enemieMaxLife: 100
   Player: {fileID: 999389824}
   Enemie: {fileID: 160909097}
   ExpEnemie: 200
@@ -24283,7 +24283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1936891160
 Transform:
   m_ObjectHideFlags: 0

@@ -9751,10 +9751,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 150
   Player: {fileID: 1772809938}
   Enemie: {fileID: 194801894}
-  ExpEnemie: 50
+  ExpEnemie: 300
   EnemieAlive: 1
   hitPrefab: {fileID: 7314884808463547674, guid: 10322012714280a44a3229f683779dba,
     type: 3}
@@ -26422,10 +26422,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 150
   Player: {fileID: 1772809938}
   Enemie: {fileID: 470798656}
-  ExpEnemie: 50
+  ExpEnemie: 300
   EnemieAlive: 1
   hitPrefab: {fileID: 7314884808463547674, guid: 10322012714280a44a3229f683779dba,
     type: 3}
@@ -78355,10 +78355,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 150
   Player: {fileID: 1772809938}
   Enemie: {fileID: 1055331076}
-  ExpEnemie: 50
+  ExpEnemie: 300
   EnemieAlive: 1
   hitPrefab: {fileID: 7314884808463547674, guid: 10322012714280a44a3229f683779dba,
     type: 3}
@@ -81766,10 +81766,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 100
   Player: {fileID: 1772809938}
   Enemie: {fileID: 1210819164}
-  ExpEnemie: 50
+  ExpEnemie: 200
   EnemieAlive: 1
   hitPrefab: {fileID: 8384705423430626994, guid: 2690972ec79ea064a9d33c91c3c9cc7c,
     type: 3}
@@ -101851,10 +101851,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 100
   Player: {fileID: 1772809938}
   Enemie: {fileID: 1390140504}
-  ExpEnemie: 50
+  ExpEnemie: 200
   EnemieAlive: 1
   hitPrefab: {fileID: 8384705423430626994, guid: 2690972ec79ea064a9d33c91c3c9cc7c,
     type: 3}
@@ -123173,10 +123173,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 150
   Player: {fileID: 1772809938}
   Enemie: {fileID: 1646789263}
-  ExpEnemie: 50
+  ExpEnemie: 300
   EnemieAlive: 1
   hitPrefab: {fileID: 7314884808463547674, guid: 10322012714280a44a3229f683779dba,
     type: 3}
@@ -129756,7 +129756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1712358027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -156476,10 +156476,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemieLife: 0
-  enemieMaxLife: 20
+  enemieMaxLife: 150
   Player: {fileID: 1772809938}
   Enemie: {fileID: 2012188449}
-  ExpEnemie: 50
+  ExpEnemie: 300
   EnemieAlive: 1
   hitPrefab: {fileID: 7314884808463547674, guid: 10322012714280a44a3229f683779dba,
     type: 3}
