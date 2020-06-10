@@ -12,7 +12,7 @@ public class MoveCredits : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        letras.transform.position = new Vector3(letras.transform.position.x, letras.transform.position.y -600 , letras.transform.position.z);
+        letras.transform.position = new Vector3(letras.transform.position.x, letras.transform.position.y - Screen.height - 200 , letras.transform.position.z);
     }
 
     // Update is called once per frame
