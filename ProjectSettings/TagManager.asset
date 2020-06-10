@@ -24,6 +24,7 @@ TagManager:
   - NpcVelho
   - FxTemporaire
   - Anel
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

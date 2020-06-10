@@ -58,7 +58,6 @@ public class Player : MonoBehaviour
     public bool canUseMagic;
     public Image fireMagicImage;
     public Image windMagicImage;
-   
 
 
     private void Awake()
@@ -84,7 +83,6 @@ public class Player : MonoBehaviour
         menuInGame.SetActive(false);
         fireBoolCooldown = 0;
         canUseMagic = false;
-        
     }
 
     private void UseItem(Item item)

@@ -10,6 +10,7 @@ public class SalvarPos : MonoBehaviour
     string nomeCenaAtual;
     public string sceneName;
     public Transform playerPosition;
+    //public bool haveCheckpoint;
 
     void Awake()
     {
@@ -18,11 +19,18 @@ public class SalvarPos : MonoBehaviour
 
     void Start()
     {
-       if(PlayerPrefs.HasKey(nomeCenaAtual + "X") &&
-        PlayerPrefs.HasKey(nomeCenaAtual + "Y") &&
-        PlayerPrefs.HasKey(nomeCenaAtual + "Z")){
-            transform.position = new Vector3(PlayerPrefs.GetFloat(nomeCenaAtual + "X"),PlayerPrefs.GetFloat(nomeCenaAtual + "Y"),PlayerPrefs.GetFloat(nomeCenaAtual + "Z"));
-        } 
+        //haveCheckpoint = GameObject.Find("Player").GetComponent<Checkpoint>().haveCheckpoint;
+
+      // if(haveCheckpoint == false)
+       // {
+            if (PlayerPrefs.HasKey(nomeCenaAtual + "X") &&
+                PlayerPrefs.HasKey(nomeCenaAtual + "Y") &&
+                PlayerPrefs.HasKey(nomeCenaAtual + "Z"))
+            {
+                transform.position = new Vector3(PlayerPrefs.GetFloat(nomeCenaAtual + "X"), PlayerPrefs.GetFloat(nomeCenaAtual + "Y"), PlayerPrefs.GetFloat(nomeCenaAtual + "Z"));
+            }
+        //}
+
 
         
     }
@@ -46,13 +54,17 @@ public class SalvarPos : MonoBehaviour
                 PlayerPrefs.SetFloat(nomeCenaAtual + "X", playerPosition.position.x);
                 PlayerPrefs.SetFloat(nomeCenaAtual + "Y", playerPosition.position.y);
                 PlayerPrefs.SetFloat(nomeCenaAtual + "Z", playerPosition.position.z);
-            }
+                //haveCheckpoint = false;
+                //PlayerPrefs.SetString(nomeCenaAtual, "false");
+        }
             else
             { 
                 PlayerPrefs.SetFloat(nomeCenaAtual + "X", transform.position.x);
                 PlayerPrefs.SetFloat(nomeCenaAtual + "Y", transform.position.y);
                 PlayerPrefs.SetFloat(nomeCenaAtual + "Z", transform.position.z);
-            }
+                //haveCheckpoint = false;
+                //PlayerPrefs.SetString(nomeCenaAtual, "false");
+        }
 
 
     } 

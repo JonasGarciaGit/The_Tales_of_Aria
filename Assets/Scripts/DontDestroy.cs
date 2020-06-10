@@ -21,6 +21,7 @@ public class DontDestroy: MonoBehaviour
     private bool canEnter;
     private string isPlayer;
     public Font font;
+    private bool checkpoint;
 
     void Start()
     {
@@ -42,6 +43,8 @@ public class DontDestroy: MonoBehaviour
             GameObject.Find("Player").GetComponent<Player>().ActualExp = ActualExp;
             GameObject.Find("Player").GetComponent<Player>().Nivel.text = Nivel;
             GameObject.Find("Player").GetComponent<Player>().canUseMagic = canUseMagic;
+            GameObject.Find("Player").GetComponent<SalvarPos>().enabled = checkpoint;
+
             //GameObject.Find("Player").GetComponent<Player>().inventory.SetItemList(itemList);
             foreach (Item item in itemList)
             {
@@ -74,6 +77,7 @@ public class DontDestroy: MonoBehaviour
         Nivel = GameObject.Find("Player").GetComponent<Player>().Nivel.text;
         itemList = GameObject.Find("Player").GetComponent<Player>().inventory.GetItemList();
         canUseMagic = GameObject.Find("Player").GetComponent<Player>().canUseMagic;
+        checkpoint = GameObject.Find("Player").GetComponent<SalvarPos>().isActiveAndEnabled;
     }
 
     private void goToNextLevel()

@@ -4233,7 +4233,7 @@ GameObject:
   - component: {fileID: 322810176}
   m_Layer: 0
   m_Name: Avancar
-  m_TagString: Untagged
+  m_TagString: Checkpoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13415,6 +13415,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3257885337853343072}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &999389825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999389824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c8a7ce0362bec3499b4b18a8a344690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1010383778
 GameObject:
   m_ObjectHideFlags: 0
@@ -27165,7 +27177,7 @@ PrefabInstance:
     - target: {fileID: 3257885337457971171, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971171, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
@@ -27180,7 +27192,7 @@ PrefabInstance:
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.59
+      value: -3.31
       objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
