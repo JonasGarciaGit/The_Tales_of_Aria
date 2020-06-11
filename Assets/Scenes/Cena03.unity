@@ -17128,7 +17128,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297538076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.1, y: -2.54, z: -5.475638}
+  m_LocalPosition: {x: 21.92, y: -1.76, z: -5.475638}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19533,8 +19533,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374190238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.95, y: -36.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 107.95, y: -38.99, z: 0}
+  m_LocalScale: {x: 1, y: 4, z: 1}
   m_Children: []
   m_Father: {fileID: 335906757}
   m_RootOrder: 4
@@ -19577,8 +19577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638dff4d9cbb55d4093585729a6b1cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: LimiteTelaMorte
-  playerPositionSave: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!1 &375911479
 GameObject:
   m_ObjectHideFlags: 0
@@ -47394,12 +47393,12 @@ PrefabInstance:
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.8
+      value: 20.2
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: -2.722
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
@@ -129781,7 +129780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1712358027
 SpriteRenderer:
   m_ObjectHideFlags: 0

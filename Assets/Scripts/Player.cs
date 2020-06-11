@@ -116,7 +116,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
-        //captureEnemieObjectFireBall();
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -155,24 +154,6 @@ public class Player : MonoBehaviour
                 this.gameObject.GetComponent<FireBallMagic>().StartCoroutine("SpellMagic", true);
                 ActualMana = this.gameObject.GetComponent<FireBallMagic>().ActualMana;
                 StartCoroutine("ConjuringFireballAnimationControl", true);
-                if (Enemie != null)
-                {
-                    if (this.gameObject.GetComponent<FireBallMagic>().Enemie.name == this.Enemie.name)
-                    {
-
-                        Enemie = Enemie;
-                    }
-                    else
-                    {
-
-                        Enemie = this.gameObject.GetComponent<FireBallMagic>().Enemie;
-                    }
-                }
-                else
-                {
-                    Enemie = this.gameObject.GetComponent<FireBallMagic>().Enemie;
-                }
-                Experience();
             }
             catch (Exception e)
             {
@@ -238,7 +219,6 @@ public class Player : MonoBehaviour
         }
 
         inputShiftCorrer();
-        Experience();
         levelUP();
         Deslizar(playerCollision);
     }
@@ -505,44 +485,21 @@ public class Player : MonoBehaviour
     }
 
 
-    void Experience()
-    {
-        try
-        {
-            if (Enemie != null)
-            {
-                if (Enemie.gameObject.active == false)
-                {
-                    ActualExp = ActualExp + Enemie.GetComponent<EnemieDeath>().ExpEnemie;
-                    Enemie = null;
-                    this.gameObject.GetComponent<FireBallMagic>().fireball.GetComponent<DestroyObject>().destroy = true;
-                    GameObject.Find("Player").GetComponent<FireBallMagic>().Enemie = null;
-                }
-            }
-
-        }
-        catch (Exception e)
-        {
-            Debug.Log(e);
-        }
-
-    }
-
     void levelUP()
     {
         if (ActualExp <= MaxExp)
         {
             Exp.rectTransform.sizeDelta = new Vector2(ActualExp / MaxExp * 208f, 9.60f);
         }
-        else
-        {
-            if (ActualExp <= 0)
-            {
+        else { 
+        if (ActualExp <= 0)
+          {
                 ActualExp = 0;
-            }
-            if (ActualExp >= MaxExp)
+          }
+        if (ActualExp >= MaxExp)
             {
                 ActualExp = ActualExp - MaxExp;
+                Exp.rectTransform.sizeDelta = new Vector2(ActualExp / MaxExp * 208f, 9.60f);
             }
             GameObject effect = Instantiate(effectLevelUp,new Vector3(myTransform.position.x,myTransform.position.y -0.5f,myTransform.position.z),Quaternion.identity);
             effect.transform.Rotate(new Vector3(-90, 0, 0));

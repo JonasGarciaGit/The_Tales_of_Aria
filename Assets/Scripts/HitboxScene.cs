@@ -2,41 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class HitboxScene : MonoBehaviour
 {
-    public string objectName;
-    public GameObject playerPositionSave;
 
-    // Start is called before the first frame update
-    void Start()
-    {   
+    public Transform Player;
+
+    private void Start()
+    {
+        Player = GameObject.Find("Player").GetComponent<Transform>();    
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (objectName == "LimiteTelaMorte")
+        if(collision.gameObject.tag == "Player")
         {
-            if(collision.gameObject.tag == "Player")
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-        }
-
-        if (objectName == "LimiteTelaBoss")
-        {
-            if (collision.gameObject.tag == "Player")
-            {
-                playerPositionSave.GetComponent<SalvarPos>().SalvarLocalizacao();
-                SceneManager.LoadScene("Boss");
-            }
+            Player.position = new Vector2(221.435f, -28.191f);
         }
     }
-
+   
 }

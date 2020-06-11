@@ -41,6 +41,7 @@ public class EnemieDeath : MonoBehaviour
         {
             EnemieAlive = false;
             Enemie.SetActive(false);
+            Player.GetComponent<Player>().ActualExp = Player.GetComponent<Player>().ActualExp + ExpEnemie;
             GameObject tempEnemieDie = Instantiate(hitPrefab, Enemie.transform.position, Enemie.transform.localRotation);
             fxGame.PlayOneShot(fxDeath);
             Destroy(tempEnemieDie, 10f);

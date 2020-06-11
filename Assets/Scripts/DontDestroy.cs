@@ -13,6 +13,7 @@ public class DontDestroy: MonoBehaviour
     private float ActualLife;
     private float ActualMana;
     private float ActualExp;
+    private float MaxExp;
     private string Nivel;
     private List<Item> itemList;
     public SpriteRenderer rend;
@@ -44,6 +45,7 @@ public class DontDestroy: MonoBehaviour
             GameObject.Find("Player").GetComponent<Player>().Nivel.text = Nivel;
             GameObject.Find("Player").GetComponent<Player>().canUseMagic = canUseMagic;
             GameObject.Find("Player").GetComponent<SalvarPos>().enabled = checkpoint;
+            GameObject.Find("Player").GetComponent<Player>().MaxExp = MaxExp;
 
             //GameObject.Find("Player").GetComponent<Player>().inventory.SetItemList(itemList);
             foreach (Item item in itemList)
@@ -78,6 +80,7 @@ public class DontDestroy: MonoBehaviour
         itemList = GameObject.Find("Player").GetComponent<Player>().inventory.GetItemList();
         canUseMagic = GameObject.Find("Player").GetComponent<Player>().canUseMagic;
         checkpoint = GameObject.Find("Player").GetComponent<SalvarPos>().isActiveAndEnabled;
+        MaxExp = GameObject.Find("Player").GetComponent<Player>().MaxExp;
     }
 
     private void goToNextLevel()
