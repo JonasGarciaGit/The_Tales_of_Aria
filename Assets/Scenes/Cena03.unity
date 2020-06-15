@@ -129780,7 +129780,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1712358027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131267,6 +131267,23 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 718570847}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1772809939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772809938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2e29cfdf156b543a3d7f8e3bdf1197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 18f1ff003e8fbdb44aba8266f6e1d168, type: 3}
+  - {fileID: 8300000, guid: 59cd085e234f32e4daddd2e589174a96, type: 3}
+  - {fileID: 8300000, guid: 2f96d3d47551ed848be9307342dcd667, type: 3}
+  audioSource: {fileID: 11557189}
 --- !u!1 &1780183333
 GameObject:
   m_ObjectHideFlags: 0

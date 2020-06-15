@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
     public bool canUseMagic;
     public Image fireMagicImage;
     public Image windMagicImage;
+    public bool firstTimeAweaking;
 
 
     private void Awake()
@@ -66,7 +67,7 @@ public class Player : MonoBehaviour
         inventory = new Inventory(UseItem);
         uiInventory.SetInventory(inventory);
         uiInventory.SetPlayer(this);
-
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -83,6 +84,9 @@ public class Player : MonoBehaviour
         menuInGame.SetActive(false);
         fireBoolCooldown = 0;
         canUseMagic = false;
+
+        
+       
     }
 
     private void UseItem(Item item)
@@ -117,6 +121,7 @@ public class Player : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
 
+
         if (Input.GetButtonDown("Jump"))
         {
             JumpPlayer();
@@ -133,6 +138,10 @@ public class Player : MonoBehaviour
         {
             fxGame.PlayOneShot(windCutAudio);
             StartCoroutine("playerSlashing", true);
+        }
+        if (firstTimeAweaking == true)
+        {
+            StartCoroutine("executeAwakingAnim");
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -196,6 +205,7 @@ public class Player : MonoBehaviour
             }
         }
 
+
         try
         {
             fireMagicImage = GameObject.Find("MagiaFogo").GetComponent<Image>();
@@ -241,13 +251,16 @@ public class Player : MonoBehaviour
 
     void MovePlayer(float move)
     {
-        playerRigidBody.velocity = new Vector2(move * speed, playerRigidBody.velocity.y);
-
-        if (move > 0 && facingRight || move < 0 && !facingRight)
+        if (firstTimeAweaking == false)
         {
-            Flip();
+            playerRigidBody.velocity = new Vector2(move * speed, playerRigidBody.velocity.y);
+
+            if (move > 0 && facingRight || move < 0 && !facingRight)
+            {
+                Flip();
+            }
+            playerAnimator.SetBool("Walking", true);
         }
-        playerAnimator.SetBool("Walking", true);
     }
 
     void Flip()
@@ -278,6 +291,7 @@ public class Player : MonoBehaviour
             {
                 canUseMagic = true;
             }
+
 
             if (collision.gameObject.tag == "Enemie")
             {
@@ -597,6 +611,22 @@ public class Player : MonoBehaviour
         playerAnimator.SetBool("Attacking", false);
         Destroy(tempWindCut);
 
+    }
+
+    IEnumerator executeAwakingAnim()
+    {
+        if(firstTimeAweaking == true)
+        {
+            playerAnimator.SetBool("isAwake", true);
+        }
+        else
+        {
+            playerAnimator.SetBool("isAwake", false);
+        }
+        
+        yield return new WaitForSeconds(1.3f);
+        playerAnimator.SetBool("isAwake", false);
+        firstTimeAweaking = false;
     }
 
 

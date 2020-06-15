@@ -23,6 +23,7 @@ public class DontDestroy: MonoBehaviour
     private string isPlayer;
     public Font font;
     private bool checkpoint;
+    private bool firstTimeAweaking;
 
     void Start()
     {
@@ -46,7 +47,7 @@ public class DontDestroy: MonoBehaviour
             GameObject.Find("Player").GetComponent<Player>().canUseMagic = canUseMagic;
             GameObject.Find("Player").GetComponent<SalvarPos>().enabled = checkpoint;
             GameObject.Find("Player").GetComponent<Player>().MaxExp = MaxExp;
-
+            GameObject.Find("Player").GetComponent<Player>().firstTimeAweaking = firstTimeAweaking;
             //GameObject.Find("Player").GetComponent<Player>().inventory.SetItemList(itemList);
             foreach (Item item in itemList)
             {
@@ -81,6 +82,7 @@ public class DontDestroy: MonoBehaviour
         canUseMagic = GameObject.Find("Player").GetComponent<Player>().canUseMagic;
         checkpoint = GameObject.Find("Player").GetComponent<SalvarPos>().isActiveAndEnabled;
         MaxExp = GameObject.Find("Player").GetComponent<Player>().MaxExp;
+        firstTimeAweaking = GameObject.Find("Player").GetComponent<Player>().firstTimeAweaking;
     }
 
     private void goToNextLevel()

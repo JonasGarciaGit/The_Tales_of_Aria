@@ -9760,7 +9760,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8a7ce0362bec3499b4b18a8a344690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  haveCheckpoint: 0
+--- !u!114 &1593430296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593430294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2e29cfdf156b543a3d7f8e3bdf1197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 18f1ff003e8fbdb44aba8266f6e1d168, type: 3}
+  - {fileID: 8300000, guid: 59cd085e234f32e4daddd2e589174a96, type: 3}
+  - {fileID: 8300000, guid: 2f96d3d47551ed848be9307342dcd667, type: 3}
+  audioSource: {fileID: 452604076}
 --- !u!1001 &1608691451
 PrefabInstance:
   m_ObjectHideFlags: 0

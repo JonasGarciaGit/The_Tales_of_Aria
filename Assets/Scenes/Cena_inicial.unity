@@ -13427,6 +13427,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8a7ce0362bec3499b4b18a8a344690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &999389826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999389824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2e29cfdf156b543a3d7f8e3bdf1197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 18f1ff003e8fbdb44aba8266f6e1d168, type: 3}
+  - {fileID: 8300000, guid: 59cd085e234f32e4daddd2e589174a96, type: 3}
+  - {fileID: 8300000, guid: 2f96d3d47551ed848be9307342dcd667, type: 3}
+  audioSource: {fileID: 877684609}
 --- !u!1 &1010383778
 GameObject:
   m_ObjectHideFlags: 0
@@ -27169,6 +27186,31 @@ PrefabInstance:
       propertyPath: menuInGame
       value: 
       objectReference: {fileID: 2138156796}
+    - target: {fileID: 3257885337457971169, guid: 58fa768f167523b4bbcb9ac231d7cb10,
+        type: 3}
+      propertyPath: firstTimeAweaking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257885337457971169, guid: 58fa768f167523b4bbcb9ac231d7cb10,
+        type: 3}
+      propertyPath: activeMenuInGame
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257885337457971169, guid: 58fa768f167523b4bbcb9ac231d7cb10,
+        type: 3}
+      propertyPath: fxWalking
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257885337457971169, guid: 58fa768f167523b4bbcb9ac231d7cb10,
+        type: 3}
+      propertyPath: fxWalk
+      value: 
+      objectReference: {fileID: 8300000, guid: aa859614ff9b2234e8547d93e1cd9e73, type: 3}
+    - target: {fileID: 3257885337457971169, guid: 58fa768f167523b4bbcb9ac231d7cb10,
+        type: 3}
+      propertyPath: playerAnimator
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971170, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: fxGame
@@ -27192,12 +27234,12 @@ PrefabInstance:
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.31
+      value: -4.42
       objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.38
+      value: -1.386
       objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971176, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
