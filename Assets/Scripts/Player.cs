@@ -360,6 +360,17 @@ public class Player : MonoBehaviour
         {
             Destroy(collision.gameObject.GetComponent<Conversa>());
         }
+		
+		if (collision.gameObject.tag == "BossFireBallCircle")
+        {
+            ActualLife = ActualLife - 30;
+            StartCoroutine("Invencible");
+        }
+        if (collision.gameObject.tag == "BossFireBall")
+        {
+            ActualLife = ActualLife - 10;
+            StartCoroutine("Invencible");
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)

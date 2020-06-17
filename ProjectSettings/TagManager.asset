@@ -25,6 +25,8 @@ TagManager:
   - FxTemporaire
   - Anel
   - Checkpoint
+  - BossFireBall
+  - BossFireBallCircle
   layers:
   - Default
   - TransparentFX

@@ -55,6 +55,9 @@ public class EnemieDeath : MonoBehaviour
                 case "Minotaur":
                     coin.GetComponent<AmountCoinsDrop>().amountCoins = 60;
                     break;
+                case "Boss":
+                    coin.GetComponent<AmountCoinsDrop>().amountCoins = 120;
+                    break;
             }
             
             Destroy(coin, 20f);     
