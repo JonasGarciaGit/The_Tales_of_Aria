@@ -29,6 +29,8 @@ public class Boss : MonoBehaviour
     public GameObject canvas;
     public GameObject BarraCinematic1;
     public GameObject BarraCinematic2;
+    public GameObject powerUp1;
+    public GameObject powerUp2;
 
     //FIREBALLS
     GameObject tempFireballs1;
@@ -51,6 +53,8 @@ public class Boss : MonoBehaviour
         timeExecutedCinematic = 0;
         BarraCinematic1.SetActive(false);
         BarraCinematic2.SetActive(false);
+        GameObject.Find("PowerUp1").SetActive(false);
+        GameObject.Find("PowerUp2").SetActive(false);
 
         bossObjForCustcene.transform.position = new Vector3(19,11,-0.450f);
     }
@@ -223,6 +227,8 @@ public class Boss : MonoBehaviour
                 player.GetComponent<Player>().enabled = true;
                 BarraCinematic1.SetActive(false);
                 BarraCinematic2.SetActive(false);
+                powerUp1.SetActive(true);
+                powerUp2.SetActive(true);
             }
 
         }
