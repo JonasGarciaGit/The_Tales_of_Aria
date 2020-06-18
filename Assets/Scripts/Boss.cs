@@ -25,6 +25,7 @@ public class Boss : MonoBehaviour
     private bool cinematic;
     public GameObject bossObjForCustcene;
     private bool canMove;
+    private bool taunting;
     int timeExecutedCinematic;
     public GameObject canvas;
     public GameObject BarraCinematic1;
@@ -50,6 +51,7 @@ public class Boss : MonoBehaviour
         bossStandby = false;
         canMove = false;
         timeAttack = false;
+        taunting = true;
         timeExecutedCinematic = 0;
         BarraCinematic1.SetActive(false);
         BarraCinematic2.SetActive(false);
@@ -86,7 +88,7 @@ public class Boss : MonoBehaviour
             }
 
 
-            Attack(x, y);
+            Attack(x -5, y);
             Movimentação();
             Cinematic();
 
@@ -145,16 +147,17 @@ public class Boss : MonoBehaviour
                 fireBallSpeed = 5;
             }
 
-            
+            GameObject.Find("Boss").GetComponent<Animator>().SetBool("Attacking", true);
             tempFireballs1.transform.position = Vector3.MoveTowards(tempFireballs1.transform.position, new Vector2(x, y), fireBallSpeed * Time.deltaTime);
             tempFireballs2.transform.position = Vector3.MoveTowards(tempFireballs2.transform.position, new Vector2(x, y + 3), fireBallSpeed * Time.deltaTime);
             tempFireballs3.transform.position = Vector3.MoveTowards(tempFireballs3.transform.position, new Vector2(x, y - 3), fireBallSpeed * Time.deltaTime);
 
             if (tempFireballs1.transform.position.x == x ||
                 tempFireballs2.transform.position.x == x ||
-                tempFireballs3.transform.position.x == x )
+                tempFireballs3.transform.position.x == x)
             {
-                 explosion1 = Instantiate(explosionPrefab, tempFireballs1.transform.position, tempFireballs1.transform.localRotation);
+                GameObject.Find("Boss").GetComponent<Animator>().SetBool("Attacking", false);
+                explosion1 = Instantiate(explosionPrefab, tempFireballs1.transform.position, tempFireballs1.transform.localRotation);
                  explosion2 = Instantiate(explosionPrefab, tempFireballs2.transform.position, tempFireballs2.transform.localRotation);
                  explosion3 = Instantiate(explosionPrefab, tempFireballs3.transform.position, tempFireballs3.transform.localRotation);
                 fxGame.PlayOneShot(explosionAudio, 1);
@@ -173,6 +176,7 @@ public class Boss : MonoBehaviour
 
     IEnumerator StopAttack()
     {
+        GameObject.Find("Boss").GetComponent<Animator>().SetBool("Sleeping", true);
         enemie.position = Vector3.MoveTowards(enemie.position, movementPoints[0].position, speed * Time.deltaTime);
         fireCircleObj.SetActive(false);
         bossStandby = true;
@@ -183,6 +187,7 @@ public class Boss : MonoBehaviour
         Destroy(explosion2);
         Destroy(explosion3);
         yield return new WaitForSeconds(10f);
+        GameObject.Find("Boss").GetComponent<Animator>().SetBool("Sleeping", false);
         fireCircleObj.SetActive(true);
         bossStandby = false;
         timeAttack = true;
@@ -199,7 +204,7 @@ public class Boss : MonoBehaviour
     void Cinematic()
     {
         float x = 19;
-        float y = -1.95f;
+        float y = -1.39f;
         float z = -0.450f;
 
         if (cinematic && timeExecutedCinematic < 1)
@@ -217,7 +222,15 @@ public class Boss : MonoBehaviour
 
             if (bossObjForCustcene.transform.position.x == x &&
             bossObjForCustcene.transform.position.y == y &&
-            bossObjForCustcene.transform.position.z == z)
+            bossObjForCustcene.transform.position.z == z &&
+            taunting == true)
+            {
+
+                StartCoroutine("executarAnimacaoCinematic");
+                
+            }
+
+            if (taunting == false)
             {
                 timeExecutedCinematic = 1;
                 timeAttack = true;
@@ -232,6 +245,16 @@ public class Boss : MonoBehaviour
             }
 
         }
+    }
+
+
+    IEnumerator executarAnimacaoCinematic()
+    {
+        taunting = true;
+        GameObject.Find("Boss").GetComponent<Animator>().SetBool("Taunt", true);
+        yield return new WaitForSeconds(4f);
+        taunting = false;
+        GameObject.Find("Boss").GetComponent<Animator>().SetBool("Taunt", false);
     }
 
 }
