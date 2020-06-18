@@ -9666,12 +9666,12 @@ PrefabInstance:
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.66
+      value: -7.702
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.46
+      value: -2.765
       objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099760, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
@@ -9797,6 +9797,11 @@ PrefabInstance:
       propertyPath: fxGame
       value: 
       objectReference: {fileID: 452604076}
+    - target: {fileID: 7542067971225099770, guid: ef4eca1f5d753b648955356f66ef8428,
+        type: 3}
+      propertyPath: costMana
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 7542067971225099771, guid: ef4eca1f5d753b648955356f66ef8428,
         type: 3}
       propertyPath: m_Enabled

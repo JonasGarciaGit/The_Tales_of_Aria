@@ -48,7 +48,6 @@ public class DontDestroy: MonoBehaviour
             GameObject.Find("Player").GetComponent<SalvarPos>().enabled = checkpoint;
             GameObject.Find("Player").GetComponent<Player>().MaxExp = MaxExp;
             GameObject.Find("Player").GetComponent<Player>().firstTimeAweaking = firstTimeAweaking;
-            //GameObject.Find("Player").GetComponent<Player>().inventory.SetItemList(itemList);
             foreach (Item item in itemList)
             {
                 GameObject.Find("Player").GetComponent<Player>().inventory.AddItem(new Item { itemType = item.itemType, amount = item.amount});
@@ -91,7 +90,6 @@ public class DontDestroy: MonoBehaviour
         {
             guardarValores();
             DontDestroyOnLoad(gameObject);
-            //DontDestroyOnLoad(MyUI);
             trocarCena();
 
         }
@@ -128,7 +126,8 @@ public class DontDestroy: MonoBehaviour
 
     IEnumerator FadeIn()
     {
-       // canvas.SetActive(false);
+        canvas.SetActive(false);
+        canEnter = false;
         for (float f = 0.05f; f <= 1; f += 0.05f)
         {
             Color c = rend.material.color;

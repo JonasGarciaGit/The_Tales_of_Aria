@@ -531,6 +531,8 @@ public class Player : MonoBehaviour
             effect.transform.parent = myTransform;
             int Levelup = int.Parse(Nivel.text) + 1;
             Nivel.text = Levelup.ToString();
+            ActualLife = MaxLife;
+            ActualMana = MaxMana;
             MaxExp = MaxExp * 1.2f;
         }
     }

@@ -1366,7 +1366,7 @@ MonoBehaviour:
   enemieMaxLife: 100
   Player: {fileID: 999389824}
   Enemie: {fileID: 101599451}
-  ExpEnemie: 200
+  ExpEnemie: 80
   EnemieAlive: 1
   hitPrefab: {fileID: 8384705423430626994, guid: 2690972ec79ea064a9d33c91c3c9cc7c,
     type: 3}
@@ -2450,7 +2450,7 @@ MonoBehaviour:
   enemieMaxLife: 100
   Player: {fileID: 999389824}
   Enemie: {fileID: 160909097}
-  ExpEnemie: 200
+  ExpEnemie: 80
   EnemieAlive: 1
   hitPrefab: {fileID: 8384705423430626994, guid: 2690972ec79ea064a9d33c91c3c9cc7c,
     type: 3}
@@ -27290,6 +27290,11 @@ PrefabInstance:
       propertyPath: fxGame
       value: 
       objectReference: {fileID: 877684609}
+    - target: {fileID: 3257885337457971170, guid: 58fa768f167523b4bbcb9ac231d7cb10,
+        type: 3}
+      propertyPath: costMana
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 3257885337457971171, guid: 58fa768f167523b4bbcb9ac231d7cb10,
         type: 3}
       propertyPath: m_Enabled
